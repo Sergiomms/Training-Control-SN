@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1593185_traini_0.AvailableCoursesFilter</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>AvailableCoursesFilter</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var AvailableCoursesFilter = Class.create();
+AvailableCoursesFilter.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+    initialize: function() {},
+
+    getAvailableCourses: function() {
+		
+        var userId = this.getParameter('sysparm_user'); // Pega o ID do usuário logado
+        
+        var allowedTrainings = [];
+
+        // Pega todos os cursos da tabela de agenda de cursos
+        var allTrainings = new GlideRecord('x_1593185_traini_0_training_schedule');
+        allTrainings.query();
+
+        while (allTrainings.next()) {
+            var trainingId = allTrainings.getValue('training_name'); // Pega o ID do curso
+            var count = 0;
+
+            // Verifica quantas vezes o usuário fez esse curso com status "Aprovado"
+            var enrollment = new GlideRecord('x_1593185_traini_0_training_enrollment');
+            enrollment.addQuery('training_name', trainingId);
+            enrollment.addQuery('opened_by', userId);
+            enrollment.addQuery('state', '3'); // Verifica somente as matrículas aprovadas
+            enrollment.query();
+
+            while (enrollment.next()) {
+                count++;
+            }
+
+            // Se o aluno fez o curso MENOS de 3 vezes, ele ainda pode se matricular
+            if (count < 3) {
+                allowedTrainings.push(trainingId);
+            }
+        }
+
+        return 'sys_idIN' + allowedTrainings.join(',');
+    },
+
+    type: 'AvailableCoursesFilter'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 19:12:19</sys_created_on>
+        <sys_id>bf2bdf3683139210440fb2dfeeaad3b4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>AvailableCoursesFilter</sys_name>
+        <sys_package display_value="Training Control" source="x_1593185_traini_0">7fef0aa283d71210440fb2dfeeaad35c</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</sys_scope>
+        <sys_update_name>sys_script_include_bf2bdf3683139210440fb2dfeeaad3b4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 19:49:07</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="DELETE">
+        <id>bf2bdf3683139210440fb2dfeeaad3b4</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 19:12:19</sys_created_on>
+        <sys_id>0c2d5bb283139210440fb2dfeeaad3ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 19:12:19</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</application>
+        <file_path/>
+        <instance_id>d8e710dadbd2fd5037d72a5913961980</instance_id>
+        <instance_name>dev206006</instance_name>
+        <name>sys_script_include_bf2bdf3683139210440fb2dfeeaad3b4</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_1593185_traini_0.AvailableCoursesFilter&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;AvailableCoursesFilter&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var AvailableCoursesFilter = Class.create();
+AvailableCoursesFilter.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+    initialize: function() {},
+
+    getAvailableCourses: function() {
+		
+        var userId = this.getParameter('sysparm_user'); // Pega o ID do usuário logado
+        
+        var allowedTrainings = [];
+
+        // Pega todos os cursos da tabela de agenda de cursos
+        var allTrainings = new GlideRecord('x_1593185_traini_0_training_schedule');
+        allTrainings.query();
+
+        while (allTrainings.next()) {
+            var trainingId = allTrainings.getValue('training_name'); // Pega o ID do curso
+            var count = 0;
+
+            // Verifica quantas vezes o usuário fez esse curso com status "Aprovado"
+            var enrollment = new GlideRecord('x_1593185_traini_0_training_enrollment');
+            enrollment.addQuery('training_name', trainingId);
+            enrollment.addQuery('opened_by', userId);
+            enrollment.addQuery('state', '3'); // Verifica somente as matrículas aprovadas
+            enrollment.query();
+
+            while (enrollment.next()) {
+                count++;
+            }
+
+            // Se o aluno fez o curso MENOS de 3 vezes, ele ainda pode se matricular
+            if (count &lt; 3) {
+                allowedTrainings.push(trainingId);
+            }
+        }
+
+        return 'sys_idIN' + allowedTrainings.join(',');
+    },
+
+    type: 'AvailableCoursesFilter'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-28 19:12:19&lt;/sys_created_on&gt;&lt;sys_id&gt;bf2bdf3683139210440fb2dfeeaad3b4&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;AvailableCoursesFilter&lt;/sys_name&gt;&lt;sys_package display_value="Training Control" source="x_1593185_traini_0"&gt;7fef0aa283d71210440fb2dfeeaad35c&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Training Control"&gt;7fef0aa283d71210440fb2dfeeaad35c&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_bf2bdf3683139210440fb2dfeeaad3b4&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-28 19:49:07&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;bf2bdf3683139210440fb2dfeeaad3b4&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-28 19:12:19&lt;/sys_created_on&gt;&lt;sys_id&gt;0c2d5bb283139210440fb2dfeeaad3ca&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-28 19:12:19&lt;/sys_updated_on&gt;&lt;table&gt;sys_script_include&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-838514265</payload_hash>
+        <record_name>AvailableCoursesFilter</record_name>
+        <reverted_from/>
+        <source>60a2a2aa831b1210440fb2dfeeaad3ca</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 19:49:07</sys_created_on>
+        <sys_id>57852b3283539210440fb2dfeeaad3a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194ae75de5c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 19:49:07</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>db852b321f539210bb175f47aed455a8</update_guid>
+        <update_guid_history>db852b321f539210bb175f47aed455a8:-838514265,dfe0673ec613921071ac4ee06623c0ee:1537375277,d42d577637139210cdb466e6233091df:-2073333292</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 20:14:36</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>8d9088d4c544466bb45472352a2414f1</sys_id>
+        <sys_metadata>bf2bdf3683139210440fb2dfeeaad3b4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AvailableCoursesFilter</sys_name>
+        <sys_package display_value="Training Control" source="x_1593185_traini_0">7fef0aa283d71210440fb2dfeeaad35c</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</sys_scope>
+        <sys_scope_delete display_value="">216de52f3b694e92a3287d9860cfebd9</sys_scope_delete>
+        <sys_update_name>sys_script_include_bf2bdf3683139210440fb2dfeeaad3b4</sys_update_name>
+        <sys_update_version display_value="sys_script_include_bf2bdf3683139210440fb2dfeeaad3b4">57852b3283539210440fb2dfeeaad3a9</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 20:14:36</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

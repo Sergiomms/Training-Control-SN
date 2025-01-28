@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>false</active>
+        <api_name>x_1593185_traini_0.CheckDuplicateEnrollment</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>CheckDuplicateEnrollment</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var CheckDuplicateEnrollment = Class.create();
+CheckDuplicateEnrollment.prototype = Object.extendsObject(AbstractAjaxProcessor,{
+    checkEnrollment: function() {
+        var trainingID = this.getParameter('sysparm_training'); // Pega o curso selecionado
+        var trainingDate = this.getParameter('sysparm_date'); // Pega a data do curso
+        var userId = this.getParameter('sysparm_user'); // Pega o ID do usuário logado
+
+        var enrollment = new GlideRecord('x_1593185_traini_0_training_enrollment');
+        enrollment.addQuery('training_name', trainingID);
+        enrollment.addQuery('training_date', trainingDate);
+        enrollment.addQuery('opened_by', userId);
+        enrollment.query();
+
+        if (enrollment.next()) {
+            return 'duplicate'; // Retorna "duplicate" se já existir a matrícula
+        }
+
+        return 'ok'; // Permite a matrícula se não houver duplicidade
+    },
+
+    type: 'CheckDuplicateEnrollment'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 13:27:45</sys_created_on>
+        <sys_id>a03a86b2839b5210440fb2dfeeaad3e9</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>CheckDuplicateEnrollment</sys_name>
+        <sys_package display_value="Training Control" source="x_1593185_traini_0">7fef0aa283d71210440fb2dfeeaad35c</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</sys_scope>
+        <sys_update_name>sys_script_include_a03a86b2839b5210440fb2dfeeaad3e9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 16:47:09</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>a03a86b2839b5210440fb2dfeeaad3e9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 13:27:45</sys_created_on>
+        <sys_id>784e42f2839b5210440fb2dfeeaad3bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 13:27:45</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

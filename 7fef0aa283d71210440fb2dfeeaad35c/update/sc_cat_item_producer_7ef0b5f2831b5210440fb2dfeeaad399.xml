@@ -6,7 +6,7 @@
         <availability>on_desktop</availability>
         <billable>false</billable>
         <can_cancel>false</can_cancel>
-        <category/>
+        <category display_value="Training">3a0031b2831b5210440fb2dfeeaad39e</category>
         <checked_out/>
         <cost>0</cost>
         <custom_cart/>
@@ -70,7 +70,7 @@
 * To access the variables, use `producer.var1` where var1 is the name of the variable
 * To access the Record Producer use `cat_item`
 */]]></save_script>
-        <sc_catalogs/>
+        <sc_catalogs>e0d08b13c3330100c8b837659bba8fb4</sc_catalogs>
         <sc_ic_item_staging/>
         <sc_ic_version/>
         <sc_template/>
@@ -89,14 +89,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-28 11:28:49</sys_created_on>
         <sys_id>7ef0b5f2831b5210440fb2dfeeaad399</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_name>Training Enrollment</sys_name>
         <sys_package display_value="Training Control" source="x_1593185_traini_0">7fef0aa283d71210440fb2dfeeaad35c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</sys_scope>
         <sys_update_name>sc_cat_item_producer_7ef0b5f2831b5210440fb2dfeeaad399</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2025-01-28 12:01:28</sys_updated_on>
+        <sys_updated_on>2025-01-28 20:14:46</sys_updated_on>
         <table_name>x_1593185_traini_0_training_enrollment</table_name>
         <taxonomy_topic/>
         <template/>
@@ -104,7 +104,7 @@
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>3</version>
+        <version>26</version>
         <view/>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
