@@ -27,9 +27,9 @@
         <formula/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="">glide_list</internal_type>
-        <mandatory>false</mandatory>
-        <max_length>1024</max_length>
+        <internal_type display_value="Reference">reference</internal_type>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
         <name>x_1593185_traini_0_training_schedule</name>
         <next_element/>
         <primary>false</primary>
@@ -39,7 +39,7 @@
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
-        <reference_qual/>
+        <reference_qual>javascript: new Instructor_Role().getInstructorRole();</reference_qual>
         <reference_qual_condition/>
         <reference_type/>
         <spell_check>false</spell_check>
@@ -53,13 +53,13 @@
         <sys_scope display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</sys_scope>
         <sys_update_name>sys_dictionary_x_1593185_traini_0_training_schedule_instructor</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-27 19:56:28</sys_updated_on>
+        <sys_updated_on>2025-01-27 23:01:50</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
         <use_dependent_field>false</use_dependent_field>
         <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
+        <use_reference_qualifier>advanced</use_reference_qualifier>
         <virtual>false</virtual>
         <virtual_type>script</virtual_type>
         <widget/>

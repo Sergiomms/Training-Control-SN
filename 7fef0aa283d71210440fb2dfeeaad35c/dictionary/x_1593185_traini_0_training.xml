@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="b4f21aa683d71210440fb2dfeeaad3ea" label="Training" max_length="40" name="x_1593185_traini_0_training" type="collection">
-        <element display="true" label="Training Name" max_length="500" name="training_name" type="string"/>
-        <element label="Translated Descrition" max_length="1000" name="translated_descrition" type="string"/>
-        <element label="Error Message" max_length="250" name="error_message" type="string"/>
-        <element label="Integration Status" max_length="40" name="integration_status" type="choice">
+        <element display="true" label="Training Name" mandatory="true" max_length="500" name="training_name" type="string"/>
+        <element label="Translated Descrition" max_length="1000" name="translated_descrition" read_only="true" type="string"/>
+        <element label="Error Message" max_length="250" name="error_message" read_only="true" type="string"/>
+        <element choice="1" label="Integration Status" max_length="40" name="integration_status" read_only="true" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Integration Success" sequence="2" value="integration_success"/>
-                <element inactive_on_update="false" label="Integrating" sequence="0" value="integrating"/>
-                <element inactive_on_update="false" label="Integration Failure" sequence="1" value="integration_failure"/>
+                <element inactive_on_update="false" label="Integration Success" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="Integrating" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Integration Failure" sequence="1" value="4"/>
             </choice>
         </element>
-        <element label="Description" max_length="1000" name="description" type="string"/>
+        <element label="Description" mandatory="true" max_length="1000" name="description" type="string"/>
     </element>
 </database>

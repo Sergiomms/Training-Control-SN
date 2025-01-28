@@ -1,0 +1,1259 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=4826000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>verify_if_training_schedule_already_exists_dont_create_if_true</internal_name>
+        <label_cache>[{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Training Schedule Record","reference":"x_1593185_traini_0_training_schedule","reference_display":"Training Schedule","type":"reference","base_type":"reference","usedInstances":{"86ec86d4-c898-4c0f-91e6-2672552b3190":["record"],"e649c1a6-506f-4a8d-8a15-843148304e76":["record"]},"attributes":{}},{"name":"Created or Updated_1.current.training_name","label":"Trigger - Record Created or Updated➛Training Schedule Record➛Training Name","reference":"x_1593185_traini_0_training","reference_display":"Training","type":"reference","base_type":"reference","parent_table_name":"x_1593185_traini_0_training_schedule","column_name":"training_name","usedInstances":{}},{"name":"Created or Updated_1.current.training_date","label":"Trigger - Record Created or Updated➛Training Schedule Record➛Training Date","reference":"","reference_display":"Training Date","type":"glide_date","base_type":"glide_date","parent_table_name":"x_1593185_traini_0_training_schedule","column_name":"training_date","usedInstances":{}},{"name":"1ccad88a-9371-40e6-8e7b-06c300f0daf2.Record","label":"1 - Look Up Record➛Training Schedule Record","reference":"x_1593185_traini_0_training_schedule","reference_display":"Training Schedule","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1ccad88a-9371-40e6-8e7b-06c300f0daf2.status","label":"1 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"2a2de32f-6563-4929-9d9f-08c017e772b5":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"Created or Updated_1.current.sys_id","label":"Trigger - Record Created or Updated➛Training Schedule Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_1593185_traini_0_training_schedule","column_name":"sys_id","usedInstances":{}}]</label_cache>
+        <master_snapshot>7598fee6839b1210440fb2dfeeaad3a0</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Verify if Training Schedule already exists, don't create if true</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>0e98322a839b1210440fb2dfeeaad306</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 21:12:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9b1feaea835b1210440fb2dfeeaad373</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>Verify if Training Schedule already exists, don't create if true</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Training Control" source="x_1593185_traini_0">7fef0aa283d71210440fb2dfeeaad35c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</sys_scope>
+        <sys_update_name>sys_hub_flow_9b1feaea835b1210440fb2dfeeaad373</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 22:33:15</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=9b1feaea835b1210440fb2dfeeaad373"/>
+    <sys_variable_value action="DELETE" query="document_key=9b1feaea835b1210440fb2dfeeaad373"/>
+    <sys_flow_record_trigger action="DELETE">
+        <active>true</active>
+        <condition table="x_1593185_traini_0_training_schedule">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>true</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 21:54:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0e98322a839b1210440fb2dfeeaad306</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 21:54:13</sys_updated_on>
+        <table>x_1593185_traini_0_training_schedule</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="DELETE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>9b1feaea835b1210440fb2dfeeaad373</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 22:33:15</sys_created_on>
+        <sys_id>fd814be283db1210440fb2dfeeaad3a7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 22:33:15</sys_updated_on>
+        <trigger display_value="">0e98322a839b1210440fb2dfeeaad306</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="DELETE" query="identifier=9b1feaea835b1210440fb2dfeeaad373^sys_idNOT INfd814be283db1210440fb2dfeeaad3a7"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=9b1feaea835b1210440fb2dfeeaad373"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=9b1feaea835b1210440fb2dfeeaad373^sys_idNOT INd31feaea835b1210440fb2dfeeaad376"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>9b1feaea835b1210440fb2dfeeaad373</id>
+        <name>Verify if Training Schedule already exists, don't create if true</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 21:12:48</sys_created_on>
+        <sys_id>d31feaea835b1210440fb2dfeeaad376</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 21:12:48</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=d31feaea835b1210440fb2dfeeaad376"/>
+    <sys_hub_flow_input action="DELETE" query="model=9b1feaea835b1210440fb2dfeeaad373^sys_idNOT IN47807a6e835b1210440fb2dfeeaad3ef,4b8032ae835b1210440fb2dfeeaad305,f6807a6e835b1210440fb2dfeeaad3e9"/>
+    <sys_complex_object action="DELETE">
+        <label/>
+        <name>FDCollection</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>global</scope_name>
+        <serialized_content>{"FlowDesigner:FDCollection":{"$COCollectionField":[{"FDChangeDetails":{"previous_display_value":"String","previous_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Display Value\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"previous_value":"String","previous_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"current_display_value":"String","current_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Display Value\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"current_value":"String","current_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Value\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"field_name":"String","field_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Field Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDCollection.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-13 23:19:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>f4f014150f023300ecf0cc52ff767eed</sys_id>
+        <sys_mod_count>101</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Flow Designer Designer Model" source="com.glide.hub.designer_backend.model">5b965bacdcd212104f34465061b06a9b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 05:06:11</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Verify if Training Schedule already exists, don't create if true">9b1feaea835b1210440fb2dfeeaad373</model>
+        <model_id>9b1feaea835b1210440fb2dfeeaad373</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_9b1feaea835b1210440fb2dfeeaad373</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 21:19:03</sys_created_on>
+        <sys_id>47807a6e835b1210440fb2dfeeaad3ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 21:19:03</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=47807a6e835b1210440fb2dfeeaad3ef"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Verify if Training Schedule already exists, don't create if true">9b1feaea835b1210440fb2dfeeaad373</model>
+        <model_id>9b1feaea835b1210440fb2dfeeaad373</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_9b1feaea835b1210440fb2dfeeaad373</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 21:19:03</sys_created_on>
+        <sys_id>4b8032ae835b1210440fb2dfeeaad305</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 21:19:03</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=4b8032ae835b1210440fb2dfeeaad305"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Verify if Training Schedule already exists, don't create if true">9b1feaea835b1210440fb2dfeeaad373</model>
+        <model_id>9b1feaea835b1210440fb2dfeeaad373</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_9b1feaea835b1210440fb2dfeeaad373</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 21:19:03</sys_created_on>
+        <sys_id>f6807a6e835b1210440fb2dfeeaad3e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 21:19:03</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=f6807a6e835b1210440fb2dfeeaad3e9"/>
+    <sys_hub_flow_output action="DELETE" query="model=9b1feaea835b1210440fb2dfeeaad373"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=9b1feaea835b1210440fb2dfeeaad373"/>
+    <sys_hub_trigger_instance_v2 action="DELETE" query="flow=9b1feaea835b1210440fb2dfeeaad373^sys_idNOT IN838032ae835b1210440fb2dfeeaad339"/>
+    <sys_hub_trigger_instance_v2 action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Verify if Training Schedule already exists, don't create if true">9b1feaea835b1210440fb2dfeeaad373</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 21:19:04</sys_created_on>
+        <sys_id>838032ae835b1210440fb2dfeeaad339</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 21:53:07</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE" query="flow=9b1feaea835b1210440fb2dfeeaad373^sys_idNOT IN838032ae835b1210440fb2dfeeaad33b,c2587ae6839b1210440fb2dfeeaad369"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Verify if Training Schedule already exists, don't create if true">9b1feaea835b1210440fb2dfeeaad373</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 21:19:04</sys_created_on>
+        <sys_id>838032ae835b1210440fb2dfeeaad33b</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 22:33:11</sys_updated_on>
+        <ui_id>1ccad88a-9371-40e6-8e7b-06c300f0daf2</ui_id>
+        <values>H4sIAAAAAAAA/9VY227bOBD9Fa2edlHHK/kmO/sUNGugwLYB6mxfkixBiZRNLE2qFJXECfzvHYq6+G7HcdD0zSTncmbmzJDyzbPLiHvukoE3iAeDbj/wvHbb83q9doT9MGz3otALccdtuAJPKUhqHHIKy3vMM7N+RH530Pb7XaQVZoIhr/ghxiiNJpRkuThhacLx7FuhdV2IOKNaJJowThQV7vnNXcNNsAKHmir3/HnlSM8SijgOKTeWDB7niwHXODiWJeX12IyDcomENS0VMVi8hksfNRWEgqsY85Q23CkWBGupZtWOophcCV5vTJjQYNE1wo8pewLzfc/IxRTCiqg9q5aoSJfdjiaSRfQq0UwKu2OB2kPJs6n4YgMwiaYxzrguEw07WQr2aGIwGxAFong0kQ9fS4dDJvLwikMuI8yrFdZasTDTNDW1oJxOwRCa4iQxRU6UvGe5MmCZNsccFs2YywdwmrKxaOLIAG9CinBzCPuX+fY3rJiJ4jOYAWUAxDhUG9mkpzJTeVbuUcSzND9QWKTWljvPc4W+ZwaljbqID9kUgUAaKZboC1C4p0Uo80ZJ9+5OigxqSkRSEGZ8pgucX+fz0fT9uGj/UGwblTcBLoi8tFcQ2T8ZkTue95OorFX2/pi8j5s24DWC2ljsXs6Zumaw2iUL7nSmhHPrVoPXcOE2A/6QW/dDTFCOGEIfj6lqRpmCTOnmknRTyxEIiPHvf3y4df+rzkCTji4+/30xOsSSkTbq6SxFjPy2F4KVW/D9lzufV13qk52dQGrSp1JpZOnzNm06ZJSTpVvmAHCl8pXpOCecbcNbdGlsfKxcN61f/rp5lz0KgAiy+WaCM5Hf9gD02OZdvl26O6kR+is8yMtfszbfw2m0zl7saOk8HX/V5HUt+XsAyFJxBIica4tyA/DykinNF9Rtn4y67dbLqAvEuXmu0FdZ25Dg8lFnSlfKPxl5vCoP7FpQ8Od3FfU/HufTf6nPlvG50pvtFzXnIrPsyeUWgp34ybil2Rpv2d0TUC38Idus6IGRMdW191KKSP2A+f+bzgt2VT2Uh/fq56e/8wslXHh+shhNoU4sgTexohFQIUVYURTLTBBUvIZr2pi6xUyluhBenyFf7VtBQss5ekKdXNqppE8xWQ6IrlT8FDtleAWG1IHwnDw8pwrvZcnYMo86J3zwvmYeDTHjeerhqyZZqB1VSqotM2lP1XaU/8CBdSAo/6SgXj/RNvF942Tbg/WX+ER+7dSJKA47LdwL2r7veb5HAq8fBH6/F8Y9HHTiutEQSkUEYxEsx0AMMI9KIpRV9ddHSzE1j/wbB5T/HObTtXEw3FL5UgrzqdEKtGPwQpmdEu/+iIpxEUrJKRY1O7s/bV68l396Mna9mhu79c+mor3VXZ6xfwX7ntFPhhR96rX6PonO+oEfnHVi0jsbENw9w4OwG7QJjTrx8dfz3Q97BewFDhUAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Verify if Training Schedule already exists, don't create if true">9b1feaea835b1210440fb2dfeeaad373</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>2a2de32f-6563-4929-9d9f-08c017e772b5</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 21:53:07</sys_created_on>
+        <sys_id>c2587ae6839b1210440fb2dfeeaad369</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 22:33:11</sys_updated_on>
+        <ui_id>e649c1a6-506f-4a8d-8a15-843148304e76</ui_id>
+        <values>H4sIAAAAAAAA/+1UUWvbMBD+K8bPxthxEpK8jYbAHtZC2/WlK0KWLolAljxZTpOF/PedbDlJ2y0NJVAG85N1uvvu++4+9LgNBQ8nYR94ko7TIcvSLOslSW/UT/Nhlqc9nlGANIxCRQvATANMG47nFZW1C2y3VwaoBR5oE3wvufslacxqY0DZ3Q5TuahKSTcPvgIjbCkkx/tw8vgUhSU1CG7BhJPtqyu7KYFImoPEwqlmdYGgwdcpYpxLvKu+7Zi/VuJ64Jl7dCJcEK8cnzSJQlhbUByw3ZzKCqKwoAplarMJJ9bUGMAB8BslN/uMpVC2VVrQdSV+IX4/cXlzQGnMT2F/JH5C3XC0YHBTWqFVG7E0l93ktKwLdd1KcLOFOa2lPZptXSEelI6yI9EynN8t9fNt128mVKPOs5WaUbk/UWuNyGsLlVsHSGiGUtCyFGpBSqNXoilGKkW8kHiI51I/Y89KLFRMmeMd44BoPMP4tAk/UCOciG8Ig8W7Rjz5Wbu+rQxPmDSaG8GkWRSmVsyI0n5B4BV4mrvIOzcfnDIAGx/2fYR5cO+apINxlo4GxBoqlCCJ/0GpFVsCryW8dfC9TwnuDikfs/S9IxVct6TOFfSi+C8CvalfxLynBxfz9OiTPO0Z/WOmfs/KSe/kW3a06ca91ZGNO6sSMEabH3WSZNyt8a11T2R+0MFQIL6FoO0Qna2lA5gJkLz6g7jOwr4BWfkG+6f5Yj5Oh0nz/X+hL/hCP/0Gvvk8cV0IAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="DELETE" query="flow=9b1feaea835b1210440fb2dfeeaad373"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE" query="flow=9b1feaea835b1210440fb2dfeeaad373^sys_idNOT IN078032ae835b1210440fb2dfeeaad33d,0d0ebeae839b1210440fb2dfeeaad30a,c90ebeae839b1210440fb2dfeeaad30b"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">878032ae835b1210440fb2dfeeaad33c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Verify if Training Schedule already exists, don't create if true">9b1feaea835b1210440fb2dfeeaad373</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 21:19:04</sys_created_on>
+        <sys_id>078032ae835b1210440fb2dfeeaad33d</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_scope display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 22:33:13</sys_updated_on>
+        <ui_id>2a2de32f-6563-4929-9d9f-08c017e772b5</ui_id>
+        <values>H4sIAAAAAAAA/+1UXW/aMBT9KyjPATkJUOCt2lRp0rZKA/Vlq6Ib+wasGTuzHT6G+O+7TgJFLVWnao97w+d+nHNujjhEpvZV7d3C3DonlzqafX+MI6kDRr8PkYY1RrOIGy2kl0bnDRBHG1B1KCwsSC31sjfnKxS1wh7upKPhOBLSVQr2D2938pVUwmLHXoElDo82mh2elfy+wlxBgYoWzr2ldTQuBb1KBmUy5QnP0nGWMpZOhkkxzookFRkgZNR3GvxwMtP73CDxqy4DH+HuxGSsCLISFke486gFEnUJymEcrUEL8Mbuz4hFEPdaPQErqT2ti0LzzsnftDsdjUJjieSRY1s8P/PuhC3MV0ZyvK+CwBbxUKhuhhtVr/XX1kc4PpZQK386PiG1o31YBdFBRSepnK/M9tuJ8E7qxmBXVIaDOr/A0xmK2qMLHwYVrmlRvoaqouPklTUb2QyTlvVgqegxKJXZEmlI1gB4ED6gG8HgjvCPDfwAVgYXX2gNDbcyC3CS500KaZ23ZOHYnCX/VQdBrcHOSt5egxoct7Lyt8SzwU71MX4Z4Yv0Hg4J5yAmE+hPs5ukP2Q47k/wpuizMc8YK5mAMh04D752x+OPmrFMsJfZfveef5H8KYzKUcJG15M/HF9L/pXMvx739I24hw/0l2lnjP2P+2Xcpcvb2HbeGvJ3p/0xRLtlcG1uBHLpSMgiYJ9O/+uhsKcASH4JbY39GSw8Ycc/Oq3/zCEGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">cd0ebeae839b1210440fb2dfeeaad309</block>
+        <comment/>
+        <connected_to>2a2de32f-6563-4929-9d9f-08c017e772b5</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Verify if Training Schedule already exists, don't create if true">9b1feaea835b1210440fb2dfeeaad373</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 22:17:54</sys_created_on>
+        <sys_id>0d0ebeae839b1210440fb2dfeeaad30a</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 22:33:14</sys_updated_on>
+        <ui_id>ce733cdd-0066-48fc-8ea2-38a43c7aa084</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">c10ebeae839b1210440fb2dfeeaad30b</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Verify if Training Schedule already exists, don't create if true">9b1feaea835b1210440fb2dfeeaad373</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id>ce733cdd-0066-48fc-8ea2-38a43c7aa084</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 22:17:54</sys_created_on>
+        <sys_id>c90ebeae839b1210440fb2dfeeaad30b</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 22:33:14</sys_updated_on>
+        <ui_id>7d3a7f56-577d-47d4-abfb-bf82d9265a06</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=9b1feaea835b1210440fb2dfeeaad373"/>
+    <sys_hub_flow_variable action="DELETE" query="model=9b1feaea835b1210440fb2dfeeaad373"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_input_9b1feaea835b1210440fb2dfeeaad373^sys_idNOT IN47807a6e835b1210440fb2dfeeaad3ee,4f8032ae835b1210440fb2dfeeaad307,8f807a6e835b1210440fb2dfeeaad3f1"/>
+    <sys_documentation action="DELETE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9b1feaea835b1210440fb2dfeeaad373</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 21:19:03</sys_created_on>
+        <sys_id>47807a6e835b1210440fb2dfeeaad3ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Training Control" source="x_1593185_traini_0">7fef0aa283d71210440fb2dfeeaad35c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 21:19:03</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9b1feaea835b1210440fb2dfeeaad373</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 21:19:03</sys_created_on>
+        <sys_id>4f8032ae835b1210440fb2dfeeaad307</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Training Control" source="x_1593185_traini_0">7fef0aa283d71210440fb2dfeeaad35c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 21:19:03</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9b1feaea835b1210440fb2dfeeaad373</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 21:19:03</sys_created_on>
+        <sys_id>8f807a6e835b1210440fb2dfeeaad3f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Training Control" source="x_1593185_traini_0">7fef0aa283d71210440fb2dfeeaad35c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 21:19:03</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_9b1feaea835b1210440fb2dfeeaad373"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_output_9b1feaea835b1210440fb2dfeeaad373"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_9b1feaea835b1210440fb2dfeeaad373"/>
+    <sys_hub_flow_snapshot action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>verify_if_training_schedule_already_exists_dont_create_if_true</internal_name>
+        <label_cache>[{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Training Schedule Record","reference":"x_1593185_traini_0_training_schedule","reference_display":"Training Schedule","type":"reference","base_type":"reference","usedInstances":{"86ec86d4-c898-4c0f-91e6-2672552b3190":["record"],"e649c1a6-506f-4a8d-8a15-843148304e76":["record"]},"attributes":{}},{"name":"Created or Updated_1.current.training_name","label":"Trigger - Record Created or Updated➛Training Schedule Record➛Training Name","reference":"x_1593185_traini_0_training","reference_display":"Training","type":"reference","base_type":"reference","parent_table_name":"x_1593185_traini_0_training_schedule","column_name":"training_name","usedInstances":{}},{"name":"Created or Updated_1.current.training_date","label":"Trigger - Record Created or Updated➛Training Schedule Record➛Training Date","reference":"","reference_display":"Training Date","type":"glide_date","base_type":"glide_date","parent_table_name":"x_1593185_traini_0_training_schedule","column_name":"training_date","usedInstances":{}},{"name":"1ccad88a-9371-40e6-8e7b-06c300f0daf2.Record","label":"1 - Look Up Record➛Training Schedule Record","reference":"x_1593185_traini_0_training_schedule","reference_display":"Training Schedule","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1ccad88a-9371-40e6-8e7b-06c300f0daf2.status","label":"1 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"2a2de32f-6563-4929-9d9f-08c017e772b5":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"Created or Updated_1.current.sys_id","label":"Trigger - Record Created or Updated➛Training Schedule Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_1593185_traini_0_training_schedule","column_name":"sys_id","usedInstances":{}}]</label_cache>
+        <master>true</master>
+        <name>Verify if Training Schedule already exists, don't create if true</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Verify if Training Schedule already exists, don't create if true">9b1feaea835b1210440fb2dfeeaad373</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 21:54:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7598fee6839b1210440fb2dfeeaad3a0</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 22:33:15</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="DELETE" query="documentkey=7598fee6839b1210440fb2dfeeaad3a0"/>
+    <sys_variable_value action="DELETE" query="document_key=7598fee6839b1210440fb2dfeeaad3a0"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=7598fee6839b1210440fb2dfeeaad3a0"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=7598fee6839b1210440fb2dfeeaad3a0^sys_idNOT INb998fee6839b1210440fb2dfeeaad3a1"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>7598fee6839b1210440fb2dfeeaad3a0</id>
+        <name>Verify if Training Schedule already exists, don't create if true</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 21:54:12</sys_created_on>
+        <sys_id>b998fee6839b1210440fb2dfeeaad3a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 21:54:12</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=b998fee6839b1210440fb2dfeeaad3a1"/>
+    <sys_hub_flow_input action="DELETE" query="model=7598fee6839b1210440fb2dfeeaad3a0^sys_idNOT INb598fee6839b1210440fb2dfeeaad3bc,bd98fee6839b1210440fb2dfeeaad3a2,f598fee6839b1210440fb2dfeeaad3dc"/>
+    <sys_complex_object action="DELETE">
+        <label/>
+        <name>FDCollection</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>global</scope_name>
+        <serialized_content>{"FlowDesigner:FDCollection":{"$COCollectionField":[{"FDChangeDetails":{"previous_display_value":"String","previous_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Display Value\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"previous_value":"String","previous_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"current_display_value":"String","current_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Display Value\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"current_value":"String","current_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Value\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"field_name":"String","field_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Field Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDCollection.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-13 23:19:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>f4f014150f023300ecf0cc52ff767eed</sys_id>
+        <sys_mod_count>101</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Flow Designer Designer Model" source="com.glide.hub.designer_backend.model">5b965bacdcd212104f34465061b06a9b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 05:06:11</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Verify if Training Schedule already exists, don't create if true">7598fee6839b1210440fb2dfeeaad3a0</model>
+        <model_id>7598fee6839b1210440fb2dfeeaad3a0</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_7598fee6839b1210440fb2dfeeaad3a0</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 21:54:12</sys_created_on>
+        <sys_id>b598fee6839b1210440fb2dfeeaad3bc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 21:58:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=b598fee6839b1210440fb2dfeeaad3bc"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Verify if Training Schedule already exists, don't create if true">7598fee6839b1210440fb2dfeeaad3a0</model>
+        <model_id>7598fee6839b1210440fb2dfeeaad3a0</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_7598fee6839b1210440fb2dfeeaad3a0</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 21:54:12</sys_created_on>
+        <sys_id>bd98fee6839b1210440fb2dfeeaad3a2</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 22:33:15</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=bd98fee6839b1210440fb2dfeeaad3a2"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Verify if Training Schedule already exists, don't create if true">7598fee6839b1210440fb2dfeeaad3a0</model>
+        <model_id>7598fee6839b1210440fb2dfeeaad3a0</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_7598fee6839b1210440fb2dfeeaad3a0</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 21:54:12</sys_created_on>
+        <sys_id>f598fee6839b1210440fb2dfeeaad3dc</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 22:33:15</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=f598fee6839b1210440fb2dfeeaad3dc"/>
+    <sys_hub_flow_output action="DELETE" query="model=7598fee6839b1210440fb2dfeeaad3a0"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=7598fee6839b1210440fb2dfeeaad3a0"/>
+    <sys_hub_trigger_instance_v2 action="DELETE" query="flow=7598fee6839b1210440fb2dfeeaad3a0^sys_idNOT IN4698fee6839b1210440fb2dfeeaad3f8"/>
+    <sys_hub_trigger_instance_v2 action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Verify if Training Schedule already exists, don't create if true">7598fee6839b1210440fb2dfeeaad3a0</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 21:54:13</sys_created_on>
+        <sys_id>4698fee6839b1210440fb2dfeeaad3f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 21:54:13</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9Va23LbNhD9FQ6f2hm1w4skWu6TK9uNZxx7Kinpg8flgCAoYUqBCgnSVjP+9y5IkKJ4kXWhaycPiYTbnl2cPQsIefiu+sghvnquzpDjE7WnUsZJyJA/W68INHPRbDO0FH1LxFzEg3CtnvMwJj01CF0Squd6T02QH5PpOrpxYRIMTWfI6arshu/Ptj4YmfrZwOYhoozamvzA5naEF8SN0+EujVY+Wn+Vs2ZyiDLdDMEL6rshYer5w2NPXaEQDHIB5nuliwpE2NOJPjrTsGnAH00zzvq6MzQd3XBNRJAGC1YDUfGAN8Rj4z555oS5BEx5yI9IQ6hCgtx75q9LI54j+i+seaaJXo8AYkyy6BVfbRmJrBkvAorJ/YrTgGUtGbqsM/DjJbvLUIsYEg/FPs9jCC1xBOuRlQDKeIHDmy6Cp0lu8Jqy1CfZ6QcY+cU3xHlInZiTSITZoz4E3M4iEgVxmKKfXI3vJ5f2Xxez8aeriT25ms4mN+PZ1aX6kvplf4vFihlCicXO3HkpNv6aEl9sW8ENiKUIeIRDuuIXmNOESFQvvQ2HxwFzaRqcGo9x3hVt81h6lu+kprVSGZcWz+n899WfdbZmjYfx09Is19Xb+ImdEj/LTjZA4w3+lr3bxVTZ0k7Vvqa9E1mzJDqaq8vAJf7lZjlgFp3Pgb2UrWIuYpTHxQ5WJBTxgHnq14vb8aeLuz+upr/Jf68n95/zz7N7mPeEGI9sHtjIde1S1IUJ8OU10mcxeXmV2mHMYIJd7F6d4Gm4i7jf0gjcfIAszWOaLgn93q1cchIzJYBthr8UHIcQUq7kaufdLNFc7oQ3JT7BvEQZ70tU/vaZRhEkaQl1YTSNQc1mYQ6op+QuZbajE40/Hpnd9fgmlbhVsvzgFNdx39BMZ6hZIsF1+OjpmqUNkOeamuaclVK8DqYVJa/sfoepfliiRynb/D24VQ2shKyV6b4XT5JtkuWuCw5IPRl3A03vCJohoFV00TxIGAsyZs2X25zc5VrHxR+5CYIZ7r46t6fEeX7wBJp8hLw5CP8zD4OYuVW9EWsqlCmbEcpPMn4/dyh1XhCS3QC2R7yTyG0inHMUsXUH8maYOrGG/aEGqmYKQRuMRg5GhudZQ4voekXeNjAasX1gWXuFTkkTH9skrpEZSROhDhC3EwDWhO5ggKdLnKRjo8BlfT+GlD0tCLMBamj7Qqxqijb3qUvyvqPTuWYl2STwqSmNnZE7GFgWtuBCAint9YmD9L4xQCNraBKvktI1KLtg8oYgvOE1JVpHqfmWdP+SdX2s+/Vb8jIinIuCcnidZXD+TOegzEip1onNUFLVCELlLmC/3GzGKVMCJSy9oXZVcPdBITZWeVsYTsAXtYoPpn+H9i3T4qTYEpX3vPVU+JBsu3WqhiDDQCPdbNEQa9ikIRsw7TA/6AFhzxRIWpOp6aSwL6OTxsRoLe1HcLRCjnLN33Eo6SooeudBMd4uKObJB6E8A1uveseA/YFqVHpcOKVQCZvEDryyOl8GCnQoYEShniJ/BYSbu7NW+IJASH048YqnBmH9VFkul4k6lILB/y+Q7AxdK1fQrMgT0rtWosqud3tJJa6JR25bNepbrSfa9pJU6f6gdelg2idNWbSzOB22bnXNxvJU4uQ2D/YsPJ163Vx9TvO6sf685vXplWXXFbsBxcevGQL0LNuGIypFwHDlBoG7fAOJGf0WExsvEJtn7xu5oWuIM0F4oWRDlGxIl1rvP6F1pFaLDpBW5IX8iRgaIENYpl9dWSYJCdc1X0WjEq/ka+5b1RljR53J3/0iHgKI+bqUZDnkA3/3dEaQSAMNm7pu1l5uB+WX222WtgNqqSHGsTVkQdMnz5J5uROcLkmqWMW7pbJEHC9I1FNgu9KnhFTQaBjxdPSvaodXJVx+cpFJ2FRiWtMkacuwVsnewfykmjNNGt3A4ip9yiq981K0w329E/eNLtw3j3O/f3KRkhFprlIyet1WpiP+g4raXJoe/wM74NCtWSUAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE" query="flow=7598fee6839b1210440fb2dfeeaad3a0^sys_idNOT IN8e98fee6839b1210440fb2dfeeaad3f7,fd98fee6839b1210440fb2dfeeaad3f6"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Verify if Training Schedule already exists, don't create if true">7598fee6839b1210440fb2dfeeaad3a0</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>2a2de32f-6563-4929-9d9f-08c017e772b5</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 21:54:13</sys_created_on>
+        <sys_id>8e98fee6839b1210440fb2dfeeaad3f7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 22:29:04</sys_updated_on>
+        <ui_id>e649c1a6-506f-4a8d-8a15-843148304e76</ui_id>
+        <values>H4sIAAAAAAAA/+VVXYviMBT9K5JnkdaqqG+LIizMzsA468vsUNLkVgNp001SR1f873vTpio6uA7Mi6xPzf3KOcd72tcdEZyMSQ94EI7CAYvCKOoGQXfYC5NBlIRdHlGAkLRJTjPASg1MaY7nNZWlC+x2Ew3UAm8p3fpZcPcYhx1Wag253e+xlAtTSLpd+A6MsJWQHPNk/PrWJgXVONyCJuPdWepWdJImILH0uYF3DtduC3fmipUZ4opFE3zwnVOfaX2fYgabHJwwaBPYWMg5IJCUSgNtktEcWSq9JWOrSwwgf/6Uy+2hYiVyWxPN6MaIP3hzL3B1KSAz5kU4HGMvUB1Op9TSOU5mttQHvZRgYGpNOKS0lHZyGqsLngorVF63WJrIplvJMssfa0XIYcDJ/1EaBAGF4+mQ17TS+Uq9PzcgZyKvJPEUpWJUHk7UWi2S0jo4OwISKo0zWhQiX8aFVmtRNSOUrLOUeOikUr3jnUYs8w5lDncHVaWdGcanVXhBtXAkfuAYbN63idmaiaTGHKmghvHv0iGpiXkKcaVCJUFcbYJrZloU9htetQYPfN/2+5/0r20YGx0X6mTm0QObOOyPonDYj62mIhdx4B+QvGEr4KWESx+8+JLW/FjyOWPcALsxxku1Dh/T8N64iD2c9rYe64R3Rv/LnDG8J2d4GndvjX8ZIuhefeWebFLlAXNihmbhY9Ba6V9lEETcbcOlAa5Ufs4HN6BtfDATILn5AH5jAsgQooW4pnNmBJ9sLXzy8Jn4MjeEg6D63ZEn/puvxdtfg/dBHi8JAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Verify if Training Schedule already exists, don't create if true">7598fee6839b1210440fb2dfeeaad3a0</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 21:54:12</sys_created_on>
+        <sys_id>fd98fee6839b1210440fb2dfeeaad3f6</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 22:33:15</sys_updated_on>
+        <ui_id>1ccad88a-9371-40e6-8e7b-06c300f0daf2</ui_id>
+        <values>H4sIAAAAAAAA/+VY227bOBD9Fa2euqjjlXx39ilINkCBtgHqbF+alqBEyiaWJlWSyhX+9x2KlOzaji9YBUiwbyY55JyZOWdI+dtTyEh4GpJxNM7G4/5oGEXdbhQNBt0Ux0nSHaRJlOBe2AoFnlOwNDjhFIa3mBd2fI/i/rgbj/rIKMwEQ5H/IaZIpzNKitKcMJ1z/PDV77r2JsFkaZLOGCeKivD02/dWmGMFDg1V4enT2tKhiDlOKLfOPOS1CMxDXg9RuebmPq5uCz67BamIhRK1QnpvqCAUMGSYa9oK51gQbKR6qGcUxeRK8OXEjAkDJ4bW+F6zR/A7iqxdRiGqlLq1eoh8ttx0doENnhhVpKZQ3jSdSZZS7fJBaIYLbs5X55zBVW6YFG6LC9vtlryYi88uHWF9QFUcmCk0gKC5DdQi92Fkk5m8+1KhvGSizIlf5DLFvB5hYxRLCmPxPIWU0zkchOY4zy0xciVvWbkZsMzbUw6DdsblHTjVbCraOLXA25BX3L6E+Yty+itWzEbxCY6BzQCIcWAIciXUslBlKm9RygtdLigstDsrXLRC/aDPOdZ6GTmkHP0sLG6XBx8xckmzW1LFcnMGR9xSH9yiVYmmv5OC4yXlUikIsyj0inI2VXG8CPYjqERwvgphGywvh425j9sO8HKIG5NDL4rekiDA+evTw/EMdynYoLmLzs2VzFuWHka7bMEd1EQEN2F9CViu3RTAT3ITvs8IKmOAZEynVLXTQkHuTPsX67aRUF0Yvfv9/U34o16DnXRy9umvs8khJ1lrux1Sghj5bS8EZ7fi+89wsai1HpOdSiNLUWmpDHKEalbsB0CoxH5l5RkkD8+h8lrPGOVk29V3aRfWrr7O//Pqe5VKB0AEueoxwZko3zEAtLkW8OtN199JvSRe41lJryX3yzms000N4MDI4PFoJRwAp1LCBHwH1w7PFojVpVdSZv3Cqya9ALqNCaDbaUYAT3WYdSK35Lx6utpqVvaP1h6v2wMFVzbEi20CO8pnfKzPzmJTwN2jFLxKNrdy8QznGn7jPqPI1ku2gBls9f6Q0y+6Y2RKzdJ7ZUWkucP8n23rnnGoKlQZ3gu8l+Odn2zJynuZZWgOlWM5POsVTYEcGmFFUSYLQZB/0C+JZCuZMaWNN95sNF/cs0SCMAMzo0FpHdTWR17E++OoUvkhC6pAvDcdQCBBGUhQB3Jc2Mc0rV6DL/Smm9YlZrysBnyr5SvlpEpJ9Uzj2lPIHYw4sKsdCCpuFNR/b3vbJLC1/e3B+iY+/JtvTSnFSa+DB8NuHEdRHJFhNBoO49EgyQZ42MuWGkVIixS6KZycAVXgeFRRo6pzvNl/fLM9rs8cAKpi4IUU9gOnMzSBRQXlDSpU+3H7fpJIySkWaw3lGpD/cVneCDVd+6+uqbyJf8EKdr2eaTe1Ndcv9Wwo2N+C/SzoB0uxEY06o5ikJ6NhPDzpZWRwMia4f4LHSX/YJTTtZU2+BL7/C2WX0rRwFgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="DELETE" query="flow=7598fee6839b1210440fb2dfeeaad3a0"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE" query="flow=7598fee6839b1210440fb2dfeeaad3a0^sys_idNOT IN2c90c3a283db1210440fb2dfeeaad391,6c90c3a283db1210440fb2dfeeaad390,f198fee6839b1210440fb2dfeeaad3e8"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">c10ebeae839b1210440fb2dfeeaad30b</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Verify if Training Schedule already exists, don't create if true">7598fee6839b1210440fb2dfeeaad3a0</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id>ce733cdd-0066-48fc-8ea2-38a43c7aa084</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 22:29:04</sys_created_on>
+        <sys_id>2c90c3a283db1210440fb2dfeeaad391</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 22:33:15</sys_updated_on>
+        <ui_id>7d3a7f56-577d-47d4-abfb-bf82d9265a06</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">cd0ebeae839b1210440fb2dfeeaad309</block>
+        <comment/>
+        <connected_to>2a2de32f-6563-4929-9d9f-08c017e772b5</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Verify if Training Schedule already exists, don't create if true">7598fee6839b1210440fb2dfeeaad3a0</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 22:29:04</sys_created_on>
+        <sys_id>6c90c3a283db1210440fb2dfeeaad390</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 22:33:15</sys_updated_on>
+        <ui_id>ce733cdd-0066-48fc-8ea2-38a43c7aa084</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">878032ae835b1210440fb2dfeeaad33c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Verify if Training Schedule already exists, don't create if true">7598fee6839b1210440fb2dfeeaad3a0</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 21:54:12</sys_created_on>
+        <sys_id>f198fee6839b1210440fb2dfeeaad3e8</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 22:33:15</sys_updated_on>
+        <ui_id>2a2de32f-6563-4929-9d9f-08c017e772b5</ui_id>
+        <values>H4sIAAAAAAAA/+1VXU/bMBT9K8jPaeQkbSl9QyCkSWxIo+JlQ9GN7bTWXDvzB9BF/e+7TtIWQSfGtse91cf345wTH7UlJvgmeLcw587JpSbzL/cJkTpi+LslGtaCzAkzmksvjS47ICEPoEK8WFiQWurlyS1bCR6UOBFP0mFzQrh0jYLN3duVbCUVt2LY3oDFHV5YMm9fXEmOg2oKdXbGMlbk0yKnNJ+Ns2paVFnOCxBQ4EAFlVBYerGjfXLdIckv9fhNE3HnLVIcztfDlNsdaCyPrDKaEPHkheYC+dSgnEjIGjQHb+xmj1gB/EarA7CS2uM4EoufnPyBC/PJJBbWAiUy0V/uj+XgYA/Xl+ABqQTmgx1K2cpIJlxvDhc1BOUvnmN9wU0TpfYtHiq16zYqrPWn3hGyH7D7YIgEhyREE5VG6oOO+nZlHj/vWF5J3bkyXCrDQO1P4NG7KvjIpyVCiTUOKtfQNOho2VjzILtm5LJOlwoPaa3MIy6NrzEFFomnaCykV4hfdvAdWBlVfMQx2NzTrMBJVnYvF8ehTYJsE+I27kKBcweR6G75PUSKveRBXNn7E1uYlY0/x80PYtCxTV4H4VkG2jZjDPhsBqOz4jQbjamYjmbitBrRKSsorSmHOk+dBx/cdvs1UFpw+johfzznffk5g0k9yejkeH7G02P5OZKcd4YmfyM08Yv9ZmYopf9D89ehka7sn/qgrVv+DzNzHwPS79x7zaRDaouIfdj9x8SLDT4uyZ5Dj8Z+i6IO2PYnEQTyV60GAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=7598fee6839b1210440fb2dfeeaad3a0"/>
+    <sys_hub_flow_variable action="DELETE" query="model=7598fee6839b1210440fb2dfeeaad3a0"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_input_7598fee6839b1210440fb2dfeeaad3a0^sys_idNOT IN3d98fee6839b1210440fb2dfeeaad3b9,7d98fee6839b1210440fb2dfeeaad3e0,fd98fee6839b1210440fb2dfeeaad3c0"/>
+    <sys_documentation action="DELETE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_7598fee6839b1210440fb2dfeeaad3a0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 21:54:12</sys_created_on>
+        <sys_id>3d98fee6839b1210440fb2dfeeaad3b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Training Control" source="x_1593185_traini_0">7fef0aa283d71210440fb2dfeeaad35c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 21:54:12</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_7598fee6839b1210440fb2dfeeaad3a0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 21:54:12</sys_created_on>
+        <sys_id>7d98fee6839b1210440fb2dfeeaad3e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Training Control" source="x_1593185_traini_0">7fef0aa283d71210440fb2dfeeaad35c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 21:54:12</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_7598fee6839b1210440fb2dfeeaad3a0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 21:54:12</sys_created_on>
+        <sys_id>fd98fee6839b1210440fb2dfeeaad3c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Training Control" source="x_1593185_traini_0">7fef0aa283d71210440fb2dfeeaad35c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 21:54:12</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_7598fee6839b1210440fb2dfeeaad3a0"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_output_7598fee6839b1210440fb2dfeeaad3a0"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_7598fee6839b1210440fb2dfeeaad3a0"/>
+    <sys_hub_flow action="DELETE">
+        <sys_id>9b1feaea835b1210440fb2dfeeaad373</sys_id>
+        <latest_snapshot>7598fee6839b1210440fb2dfeeaad3a0</latest_snapshot>
+        <compiler_build>glide-xanadu-07-02-2024__patch4-11-22-2024_12-02-2024_1408.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="DELETE" query="plan_id=9b1feaea835b1210440fb2dfeeaad373^sys_idNOT IN4e98322a839b1210440fb2dfeeaad308"/>
+    <sys_flow_trigger_plan action="DELETE">
+        <binding_strategy>com.snc.process_flow.engine.binding.Every</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"4e98322a839b1210440fb2dfeeaad308","name":"plan","plan_signature":null}}</plan>
+        <plan_id>9b1feaea835b1210440fb2dfeeaad373</plan_id>
+        <snapshot>7598fee6839b1210440fb2dfeeaad3a0</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 21:54:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4e98322a839b1210440fb2dfeeaad308</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 22:33:15</sys_updated_on>
+        <trigger display_value="">0e98322a839b1210440fb2dfeeaad306</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="DELETE" query="plan_id=9b1feaea835b1210440fb2dfeeaad373"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</application>
+        <file_path/>
+        <instance_id>d8e710dadbd2fd5037d72a5913961980</instance_id>
+        <instance_name>dev206006</instance_name>
+        <name>sys_hub_flow_9b1feaea835b1210440fb2dfeeaad373</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_flow"&gt;&lt;sys_hub_flow action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;true&lt;/active&gt;&lt;annotation/&gt;&lt;attributes&gt;browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=4826000,viewActivatedIn=naturalLanguage&lt;/attributes&gt;&lt;authored_on_release_version&gt;26000&lt;/authored_on_release_version&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description/&gt;&lt;display_name_after_preview/&gt;&lt;flow_priority&gt;MEDIUM&lt;/flow_priority&gt;&lt;generation_source/&gt;&lt;internal_name&gt;verify_if_training_schedule_already_exists_dont_create_if_true&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Training Schedule Record","reference":"x_1593185_traini_0_training_schedule","reference_display":"Training Schedule","type":"reference","base_type":"reference","usedInstances":{"86ec86d4-c898-4c0f-91e6-2672552b3190":["record"],"e649c1a6-506f-4a8d-8a15-843148304e76":["record"]},"attributes":{}},{"name":"Created or Updated_1.current.training_name","label":"Trigger - Record Created or Updated➛Training Schedule Record➛Training Name","reference":"x_1593185_traini_0_training","reference_display":"Training","type":"reference","base_type":"reference","parent_table_name":"x_1593185_traini_0_training_schedule","column_name":"training_name","usedInstances":{}},{"name":"Created or Updated_1.current.training_date","label":"Trigger - Record Created or Updated➛Training Schedule Record➛Training Date","reference":"","reference_display":"Training Date","type":"glide_date","base_type":"glide_date","parent_table_name":"x_1593185_traini_0_training_schedule","column_name":"training_date","usedInstances":{}},{"name":"1ccad88a-9371-40e6-8e7b-06c300f0daf2.Record","label":"1 - Look Up Record➛Training Schedule Record","reference":"x_1593185_traini_0_training_schedule","reference_display":"Training Schedule","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1ccad88a-9371-40e6-8e7b-06c300f0daf2.status","label":"1 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"2a2de32f-6563-4929-9d9f-08c017e772b5":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"Created or Updated_1.current.sys_id","label":"Trigger - Record Created or Updated➛Training Schedule Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_1593185_traini_0_training_schedule","column_name":"sys_id","usedInstances":{}}]&lt;/label_cache&gt;&lt;master_snapshot&gt;7598fee6839b1210440fb2dfeeaad3a0&lt;/master_snapshot&gt;&lt;master_snapshot_digest/&gt;&lt;name&gt;Verify if Training Schedule already exists, don't create if true&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;pre_compiled&gt;false&lt;/pre_compiled&gt;&lt;remote_trigger_id&gt;0e98322a839b1210440fb2dfeeaad306&lt;/remote_trigger_id&gt;&lt;run_as&gt;user&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;show_draft_actions&gt;false&lt;/show_draft_actions&gt;&lt;show_triggered_flows&gt;false&lt;/show_triggered_flows&gt;&lt;status&gt;published&lt;/status&gt;&lt;substatus/&gt;&lt;sys_class_name&gt;sys_hub_flow&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-27 21:12:48&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;9b1feaea835b1210440fb2dfeeaad373&lt;/sys_id&gt;&lt;sys_mod_count&gt;21&lt;/sys_mod_count&gt;&lt;sys_name&gt;Verify if Training Schedule already exists, don't create if true&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Training Control" source="x_1593185_traini_0"&gt;7fef0aa283d71210440fb2dfeeaad35c&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Training Control"&gt;7fef0aa283d71210440fb2dfeeaad35c&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_flow_9b1feaea835b1210440fb2dfeeaad373&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-27 22:33:15&lt;/sys_updated_on&gt;&lt;type&gt;flow&lt;/type&gt;&lt;version&gt;2&lt;/version&gt;&lt;/sys_hub_flow&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=9b1feaea835b1210440fb2dfeeaad373"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=9b1feaea835b1210440fb2dfeeaad373"/&gt;&lt;sys_flow_record_trigger action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;condition table="x_1593185_traini_0_training_schedule"&gt;^EQ&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/condition&gt;&lt;name/&gt;&lt;on_delete&gt;false&lt;/on_delete&gt;&lt;on_insert&gt;true&lt;/on_insert&gt;&lt;on_update&gt;true&lt;/on_update&gt;&lt;run_flow_in&gt;background&lt;/run_flow_in&gt;&lt;run_on_extended&gt;false&lt;/run_on_extended&gt;&lt;run_when_setting&gt;both&lt;/run_when_setting&gt;&lt;run_when_user_list/&gt;&lt;run_when_user_setting&gt;any&lt;/run_when_user_setting&gt;&lt;sys_class_name&gt;sys_flow_record_trigger&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-27 21:54:13&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;0e98322a839b1210440fb2dfeeaad306&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_overrides/&gt;&lt;sys_scope display_value="Training Control"&gt;7fef0aa283d71210440fb2dfeeaad35c&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-27 21:54:13&lt;/sys_updated_on&gt;&lt;table&gt;x_1593185_traini_0_training_schedule&lt;/table&gt;&lt;/sys_flow_record_trigger&gt;&lt;sys_trigger_runner_mapping action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;data&gt;{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}&lt;/data&gt;&lt;identifier&gt;9b1feaea835b1210440fb2dfeeaad373&lt;/identifier&gt;&lt;runner&gt;FDTriggerRunner&lt;/runner&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-27 22:33:15&lt;/sys_created_on&gt;&lt;sys_id&gt;fd814be283db1210440fb2dfeeaad3a7&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-27 22:33:15&lt;/sys_updated_on&gt;&lt;trigger display_value=""&gt;0e98322a839b1210440fb2dfeeaad306&lt;/trigger&gt;&lt;/sys_trigger_runner_mapping&gt;&lt;sys_trigger_runner_mapping action="delete_multiple" query="identifier=9b1feaea835b1210440fb2dfeeaad373^sys_idNOT INfd814be283db1210440fb2dfeeaad3a7"/&gt;&lt;sys_hub_flow_stage action="delete_multiple" query="flow=9b1feaea835b1210440fb2dfeeaad373"/&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=9b1feaea835b1210440fb2dfeeaad373^sys_idNOT INd31feaea835b1210440fb2dfeeaad376"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;9b1feaea835b1210440fb2dfeeaad373&lt;/id&gt;&lt;name&gt;Verify if Training Schedule already exists, don't create if true&lt;/name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-27 21:12:48&lt;/sys_created_on&gt;&lt;sys_id&gt;d31feaea835b1210440fb2dfeeaad376&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-27 21:12:48&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=d31feaea835b1210440fb2dfeeaad376"/&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=9b1feaea835b1210440fb2dfeeaad373^sys_idNOT IN47807a6e835b1210440fb2dfeeaad3ef,4b8032ae835b1210440fb2dfeeaad305,f6807a6e835b1210440fb2dfeeaad3e9"/&gt;&lt;sys_complex_object action="INSERT_OR_UPDATE"&gt;&lt;label/&gt;&lt;name&gt;FDCollection&lt;/name&gt;&lt;namespace&gt;FlowDesigner&lt;/namespace&gt;&lt;scope_name&gt;global&lt;/scope_name&gt;&lt;serialized_content&gt;{"FlowDesigner:FDCollection":{"$COCollectionField":[{"FDChangeDetails":{"previous_display_value":"String","previous_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Display Value\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"previous_value":"String","previous_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"current_display_value":"String","current_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Display Value\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"current_value":"String","current_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Value\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"field_name":"String","field_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Field Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDCollection.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"}}&lt;/serialized_content&gt;&lt;sys_class_name&gt;sys_complex_object&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-06-13 23:19:20&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path/&gt;&lt;sys_id&gt;f4f014150f023300ecf0cc52ff767eed&lt;/sys_id&gt;&lt;sys_mod_count&gt;101&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Flow Designer Designer Model" source="com.glide.hub.designer_backend.model"&gt;5b965bacdcd212104f34465061b06a9b&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-09-28 05:06:11&lt;/sys_updated_on&gt;&lt;type&gt;complex_object_collection&lt;/type&gt;&lt;/sys_complex_object&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;changed_fields&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Changed Fields&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;4000&lt;/max_length&gt;&lt;model display_value="Verify if Training Schedule already exists, don't create if true"&gt;9b1feaea835b1210440fb2dfeeaad373&lt;/model&gt;&lt;model_id&gt;9b1feaea835b1210440fb2dfeeaad373&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_9b1feaea835b1210440fb2dfeeaad373&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-27 21:19:03&lt;/sys_created_on&gt;&lt;sys_id&gt;47807a6e835b1210440fb2dfeeaad3ef&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Training Control"&gt;7fef0aa283d71210440fb2dfeeaad35c&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-27 21:19:03&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=47807a6e835b1210440fb2dfeeaad3ef"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;table_name&lt;/internal_type&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="Verify if Training Schedule already exists, don't create if true"&gt;9b1feaea835b1210440fb2dfeeaad373&lt;/model&gt;&lt;model_id&gt;9b1feaea835b1210440fb2dfeeaad373&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_9b1feaea835b1210440fb2dfeeaad373&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;101&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-27 21:19:03&lt;/sys_created_on&gt;&lt;sys_id&gt;4b8032ae835b1210440fb2dfeeaad305&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Training Control"&gt;7fef0aa283d71210440fb2dfeeaad35c&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-27 21:19:03&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4b8032ae835b1210440fb2dfeeaad305"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent&gt;table_name&lt;/dependent&gt;&lt;dependent_on_field&gt;table_name&lt;/dependent_on_field&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;current&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;document_id&lt;/internal_type&gt;&lt;label&gt;Record&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="Verify if Training Schedule already exists, don't create if true"&gt;9b1feaea835b1210440fb2dfeeaad373&lt;/model&gt;&lt;model_id&gt;9b1feaea835b1210440fb2dfeeaad373&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_9b1feaea835b1210440fb2dfeeaad373&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-27 21:19:03&lt;/sys_created_on&gt;&lt;sys_id&gt;f6807a6e835b1210440fb2dfeeaad3e9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Training Control"&gt;7fef0aa283d71210440fb2dfeeaad35c&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-27 21:19:03&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;true&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f6807a6e835b1210440fb2dfeeaad3e9"/&gt;&lt;sys_hub_flow_output action="delete_multiple" query="model=9b1feaea835b1210440fb2dfeeaad373"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=9b1feaea835b1210440fb2dfeeaad373"/&gt;&lt;sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=9b1feaea835b1210440fb2dfeeaad373^sys_idNOT IN838032ae835b1210440fb2dfeeaad339"/&gt;&lt;sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="Verify if Training Schedule already exists, don't create if true"&gt;9b1feaea835b1210440fb2dfeeaad373&lt;/flow&gt;&lt;name&gt;Created or Updated&lt;/name&gt;&lt;remote_sys_id/&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-27 21:19:04&lt;/sys_created_on&gt;&lt;sys_id&gt;838032ae835b1210440fb2dfeeaad339&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-27 21:53:07&lt;/sys_updated_on&gt;&lt;trigger_definition display_value="Created or Updated"&gt;a45d9180c32222002841b63b12d3aea7&lt;/trigger_definition&gt;&lt;trigger_inputs&gt;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&lt;/trigger_inputs&gt;&lt;trigger_outputs/&gt;&lt;trigger_type&gt;record_create_or_update&lt;/trigger_type&gt;&lt;/sys_hub_trigger_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="delete_multiple" query="flow=9b1feaea835b1210440fb2dfeeaad373^sys_idNOT IN838032ae835b1210440fb2dfeeaad33b,c2587ae6839b1210440fb2dfeeaad369"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Look Up Record"&gt;9d09f99587003300663ca1bb36cb0ba3&lt;/action_type&gt;&lt;action_type_parent display_value="Look Up Record"&gt;b93f42810b30030085c083eb37673a63&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="Verify if Training Schedule already exists, don't create if true"&gt;9b1feaea835b1210440fb2dfeeaad373&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-27 21:19:04&lt;/sys_created_on&gt;&lt;sys_id&gt;838032ae835b1210440fb2dfeeaad33b&lt;/sys_id&gt;&lt;sys_mod_count&gt;12&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Training Control"&gt;7fef0aa283d71210440fb2dfeeaad35c&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-27 22:33:11&lt;/sys_updated_on&gt;&lt;ui_id&gt;1ccad88a-9371-40e6-8e7b-06c300f0daf2&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/9VY227bOBD9Fa2edlHHK/kmO/sUNGugwLYB6mxfkixBiZRNLE2qFJXECfzvHYq6+G7HcdD0zSTncmbmzJDyzbPLiHvukoE3iAeDbj/wvHbb83q9doT9MGz3otALccdtuAJPKUhqHHIKy3vMM7N+RH530Pb7XaQVZoIhr/ghxiiNJpRkuThhacLx7FuhdV2IOKNaJJowThQV7vnNXcNNsAKHmir3/HnlSM8SijgOKTeWDB7niwHXODiWJeX12IyDcomENS0VMVi8hksfNRWEgqsY85Q23CkWBGupZtWOophcCV5vTJjQYNE1wo8pewLzfc/IxRTCiqg9q5aoSJfdjiaSRfQq0UwKu2OB2kPJs6n4YgMwiaYxzrguEw07WQr2aGIwGxAFong0kQ9fS4dDJvLwikMuI8yrFdZasTDTNDW1oJxOwRCa4iQxRU6UvGe5MmCZNsccFs2YywdwmrKxaOLIAG9CinBzCPuX+fY3rJiJ4jOYAWUAxDhUG9mkpzJTeVbuUcSzND9QWKTWljvPc4W+ZwaljbqID9kUgUAaKZboC1C4p0Uo80ZJ9+5OigxqSkRSEGZ8pgucX+fz0fT9uGj/UGwblTcBLoi8tFcQ2T8ZkTue95OorFX2/pi8j5s24DWC2ljsXs6Zumaw2iUL7nSmhHPrVoPXcOE2A/6QW/dDTFCOGEIfj6lqRpmCTOnmknRTyxEIiPHvf3y4df+rzkCTji4+/30xOsSSkTbq6SxFjPy2F4KVW/D9lzufV13qk52dQGrSp1JpZOnzNm06ZJSTpVvmAHCl8pXpOCecbcNbdGlsfKxcN61f/rp5lz0KgAiy+WaCM5Hf9gD02OZdvl26O6kR+is8yMtfszbfw2m0zl7saOk8HX/V5HUt+XsAyFJxBIica4tyA/DykinNF9Rtn4y67dbLqAvEuXmu0FdZ25Dg8lFnSlfKPxl5vCoP7FpQ8Od3FfU/HufTf6nPlvG50pvtFzXnIrPsyeUWgp34ybil2Rpv2d0TUC38Idus6IGRMdW191KKSP2A+f+bzgt2VT2Uh/fq56e/8wslXHh+shhNoU4sgTexohFQIUVYURTLTBBUvIZr2pi6xUyluhBenyFf7VtBQss5ekKdXNqppE8xWQ6IrlT8FDtleAWG1IHwnDw8pwrvZcnYMo86J3zwvmYeDTHjeerhqyZZqB1VSqotM2lP1XaU/8CBdSAo/6SgXj/RNvF942Tbg/WX+ER+7dSJKA47LdwL2r7veb5HAq8fBH6/F8Y9HHTiutEQSkUEYxEsx0AMMI9KIpRV9ddHSzE1j/wbB5T/HObTtXEw3FL5UgrzqdEKtGPwQpmdEu/+iIpxEUrJKRY1O7s/bV68l396Mna9mhu79c+mor3VXZ6xfwX7ntFPhhR96rX6PonO+oEfnHVi0jsbENw9w4OwG7QJjTrx8dfz3Q97BewFDhUAAA==&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Update Record"&gt;f9d01dd2c31332002841b63b12d3aea1&lt;/action_type&gt;&lt;action_type_parent display_value="Update Record"&gt;baf174c8c3c232002841b63b12d3aee4&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="Verify if Training Schedule already exists, don't create if true"&gt;9b1feaea835b1210440fb2dfeeaad373&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;3&lt;/order&gt;&lt;parent_ui_id&gt;2a2de32f-6563-4929-9d9f-08c017e772b5&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-27 21:53:07&lt;/sys_created_on&gt;&lt;sys_id&gt;c2587ae6839b1210440fb2dfeeaad369&lt;/sys_id&gt;&lt;sys_mod_count&gt;12&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Training Control"&gt;7fef0aa283d71210440fb2dfeeaad35c&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-27 22:33:11&lt;/sys_updated_on&gt;&lt;ui_id&gt;e649c1a6-506f-4a8d-8a15-843148304e76&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/+1UUWvbMBD+K8bPxthxEpK8jYbAHtZC2/WlK0KWLolAljxZTpOF/PedbDlJ2y0NJVAG85N1uvvu++4+9LgNBQ8nYR94ko7TIcvSLOslSW/UT/Nhlqc9nlGANIxCRQvATANMG47nFZW1C2y3VwaoBR5oE3wvufslacxqY0DZ3Q5TuahKSTcPvgIjbCkkx/tw8vgUhSU1CG7BhJPtqyu7KYFImoPEwqlmdYGgwdcpYpxLvKu+7Zi/VuJ64Jl7dCJcEK8cnzSJQlhbUByw3ZzKCqKwoAplarMJJ9bUGMAB8BslN/uMpVC2VVrQdSV+IX4/cXlzQGnMT2F/JH5C3XC0YHBTWqFVG7E0l93ktKwLdd1KcLOFOa2lPZptXSEelI6yI9EynN8t9fNt128mVKPOs5WaUbk/UWuNyGsLlVsHSGiGUtCyFGpBSqNXoilGKkW8kHiI51I/Y89KLFRMmeMd44BoPMP4tAk/UCOciG8Ig8W7Rjz5Wbu+rQxPmDSaG8GkWRSmVsyI0n5B4BV4mrvIOzcfnDIAGx/2fYR5cO+apINxlo4GxBoqlCCJ/0GpFVsCryW8dfC9TwnuDikfs/S9IxVct6TOFfSi+C8CvalfxLynBxfz9OiTPO0Z/WOmfs/KSe/kW3a06ca91ZGNO6sSMEabH3WSZNyt8a11T2R+0MFQIL6FoO0Qna2lA5gJkLz6g7jOwr4BWfkG+6f5Yj5Oh0nz/X+hL/hCP/0Gvvk8cV0IAAA=&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=9b1feaea835b1210440fb2dfeeaad373"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=9b1feaea835b1210440fb2dfeeaad373^sys_idNOT IN078032ae835b1210440fb2dfeeaad33d,0d0ebeae839b1210440fb2dfeeaad30a,c90ebeae839b1210440fb2dfeeaad30b"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;878032ae835b1210440fb2dfeeaad33c&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Verify if Training Schedule already exists, don't create if true"&gt;9b1feaea835b1210440fb2dfeeaad373&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="If"&gt;af4e1945c3e232002841b63b12d3ae3e&lt;/logic_definition&gt;&lt;order&gt;2&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-27 21:19:04&lt;/sys_created_on&gt;&lt;sys_id&gt;078032ae835b1210440fb2dfeeaad33d&lt;/sys_id&gt;&lt;sys_mod_count&gt;15&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Training Control"&gt;7fef0aa283d71210440fb2dfeeaad35c&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-27 22:33:13&lt;/sys_updated_on&gt;&lt;ui_id&gt;2a2de32f-6563-4929-9d9f-08c017e772b5&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/+1UXW/aMBT9KyjPATkJUOCt2lRp0rZKA/Vlq6Ib+wasGTuzHT6G+O+7TgJFLVWnao97w+d+nHNujjhEpvZV7d3C3DonlzqafX+MI6kDRr8PkYY1RrOIGy2kl0bnDRBHG1B1KCwsSC31sjfnKxS1wh7upKPhOBLSVQr2D2938pVUwmLHXoElDo82mh2elfy+wlxBgYoWzr2ldTQuBb1KBmUy5QnP0nGWMpZOhkkxzookFRkgZNR3GvxwMtP73CDxqy4DH+HuxGSsCLISFke486gFEnUJymEcrUEL8Mbuz4hFEPdaPQErqT2ti0LzzsnftDsdjUJjieSRY1s8P/PuhC3MV0ZyvK+CwBbxUKhuhhtVr/XX1kc4PpZQK386PiG1o31YBdFBRSepnK/M9tuJ8E7qxmBXVIaDOr/A0xmK2qMLHwYVrmlRvoaqouPklTUb2QyTlvVgqegxKJXZEmlI1gB4ED6gG8HgjvCPDfwAVgYXX2gNDbcyC3CS500KaZ23ZOHYnCX/VQdBrcHOSt5egxoct7Lyt8SzwU71MX4Z4Yv0Hg4J5yAmE+hPs5ukP2Q47k/wpuizMc8YK5mAMh04D752x+OPmrFMsJfZfveef5H8KYzKUcJG15M/HF9L/pXMvx739I24hw/0l2lnjP2P+2Xcpcvb2HbeGvJ3p/0xRLtlcG1uBHLpSMgiYJ9O/+uhsKcASH4JbY39GSw8Ycc/Oq3/zCEGAAA=&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;cd0ebeae839b1210440fb2dfeeaad309&lt;/block&gt;&lt;comment/&gt;&lt;connected_to&gt;2a2de32f-6563-4929-9d9f-08c017e772b5&lt;/connected_to&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Verify if Training Schedule already exists, don't create if true"&gt;9b1feaea835b1210440fb2dfeeaad373&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="Else"&gt;1f781bf3c32232002841b63b12d3aee6&lt;/logic_definition&gt;&lt;order&gt;4&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-27 22:17:54&lt;/sys_created_on&gt;&lt;sys_id&gt;0d0ebeae839b1210440fb2dfeeaad30a&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Training Control"&gt;7fef0aa283d71210440fb2dfeeaad35c&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-27 22:33:14&lt;/sys_updated_on&gt;&lt;ui_id&gt;ce733cdd-0066-48fc-8ea2-38a43c7aa084&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;c10ebeae839b1210440fb2dfeeaad30b&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Verify if Training Schedule already exists, don't create if true"&gt;9b1feaea835b1210440fb2dfeeaad373&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="End"&gt;d176605ea76103004f27b0d2187901c7&lt;/logic_definition&gt;&lt;order&gt;5&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id&gt;ce733cdd-0066-48fc-8ea2-38a43c7aa084&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-27 22:17:54&lt;/sys_created_on&gt;&lt;sys_id&gt;c90ebeae839b1210440fb2dfeeaad30b&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Training Control"&gt;7fef0aa283d71210440fb2dfeeaad35c&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-27 22:33:14&lt;/sys_updated_on&gt;&lt;ui_id&gt;7d3a7f56-577d-47d4-abfb-bf82d9265a06&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=9b1feaea835b1210440fb2dfeeaad373"/&gt;&lt;sys_hub_flow_variable action="delete_multiple" query="model=9b1feaea835b1210440fb2dfeeaad373"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_9b1feaea835b1210440fb2dfeeaad373^sys_idNOT IN47807a6e835b1210440fb2dfeeaad3ee,4f8032ae835b1210440fb2dfeeaad307,8f807a6e835b1210440fb2dfeeaad3f1"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;current&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Record&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_9b1feaea835b1210440fb2dfeeaad373&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-27 21:19:03&lt;/sys_created_on&gt;&lt;sys_id&gt;47807a6e835b1210440fb2dfeeaad3ee&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Training Control" source="x_1593185_traini_0"&gt;7fef0aa283d71210440fb2dfeeaad35c&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Training Control"&gt;7fef0aa283d71210440fb2dfeeaad35c&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-27 21:19:03&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_9b1feaea835b1210440fb2dfeeaad373&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-27 21:19:03&lt;/sys_created_on&gt;&lt;sys_id&gt;4f8032ae835b1210440fb2dfeeaad307&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Training Control" source="x_1593185_traini_0"&gt;7fef0aa283d71210440fb2dfeeaad35c&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Training Control"&gt;7fef0aa283d71210440fb2dfeeaad35c&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-27 21:19:03&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;changed_fields&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Changed Fields&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_9b1feaea835b1210440fb2dfeeaad373&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-27 21:19:03&lt;/sys_created_on&gt;&lt;sys_id&gt;8f807a6e835b1210440fb2dfeeaad3f1&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Training Control" source="x_1593185_traini_0"&gt;7fef0aa283d71210440fb2dfeeaad35c&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Training Control"&gt;7fef0aa283d71210440fb2dfeeaad35c&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-27 21:19:03&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_9b1feaea835b1210440fb2dfeeaad373"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_9b1feaea835b1210440fb2dfeeaad373"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_9b1feaea835b1210440fb2dfeeaad373"/&gt;&lt;sys_hub_flow_snapshot action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;true&lt;/active&gt;&lt;annotation/&gt;&lt;attributes&gt;browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage&lt;/attributes&gt;&lt;authored_on_release_version&gt;26000&lt;/authored_on_release_version&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description/&gt;&lt;flow_priority&gt;MEDIUM&lt;/flow_priority&gt;&lt;internal_name&gt;verify_if_training_schedule_already_exists_dont_create_if_true&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Training Schedule Record","reference":"x_1593185_traini_0_training_schedule","reference_display":"Training Schedule","type":"reference","base_type":"reference","usedInstances":{"86ec86d4-c898-4c0f-91e6-2672552b3190":["record"],"e649c1a6-506f-4a8d-8a15-843148304e76":["record"]},"attributes":{}},{"name":"Created or Updated_1.current.training_name","label":"Trigger - Record Created or Updated➛Training Schedule Record➛Training Name","reference":"x_1593185_traini_0_training","reference_display":"Training","type":"reference","base_type":"reference","parent_table_name":"x_1593185_traini_0_training_schedule","column_name":"training_name","usedInstances":{}},{"name":"Created or Updated_1.current.training_date","label":"Trigger - Record Created or Updated➛Training Schedule Record➛Training Date","reference":"","reference_display":"Training Date","type":"glide_date","base_type":"glide_date","parent_table_name":"x_1593185_traini_0_training_schedule","column_name":"training_date","usedInstances":{}},{"name":"1ccad88a-9371-40e6-8e7b-06c300f0daf2.Record","label":"1 - Look Up Record➛Training Schedule Record","reference":"x_1593185_traini_0_training_schedule","reference_display":"Training Schedule","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1ccad88a-9371-40e6-8e7b-06c300f0daf2.status","label":"1 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"2a2de32f-6563-4929-9d9f-08c017e772b5":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"Created or Updated_1.current.sys_id","label":"Trigger - Record Created or Updated➛Training Schedule Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_1593185_traini_0_training_schedule","column_name":"sys_id","usedInstances":{}}]&lt;/label_cache&gt;&lt;master&gt;true&lt;/master&gt;&lt;name&gt;Verify if Training Schedule already exists, don't create if true&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;parent_flow display_value="Verify if Training Schedule already exists, don't create if true"&gt;9b1feaea835b1210440fb2dfeeaad373&lt;/parent_flow&gt;&lt;remote_trigger_id/&gt;&lt;run_as&gt;user&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;status&gt;published&lt;/status&gt;&lt;sys_class_name&gt;sys_hub_flow_snapshot&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-27 21:54:12&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;7598fee6839b1210440fb2dfeeaad3a0&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Training Control"&gt;7fef0aa283d71210440fb2dfeeaad35c&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-27 22:33:15&lt;/sys_updated_on&gt;&lt;type&gt;flow&lt;/type&gt;&lt;version&gt;2&lt;/version&gt;&lt;/sys_hub_flow_snapshot&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=7598fee6839b1210440fb2dfeeaad3a0"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=7598fee6839b1210440fb2dfeeaad3a0"/&gt;&lt;sys_hub_flow_stage action="delete_multiple" query="flow=7598fee6839b1210440fb2dfeeaad3a0"/&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=7598fee6839b1210440fb2dfeeaad3a0^sys_idNOT INb998fee6839b1210440fb2dfeeaad3a1"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;7598fee6839b1210440fb2dfeeaad3a0&lt;/id&gt;&lt;name&gt;Verify if Training Schedule already exists, don't create if true&lt;/name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-27 21:54:12&lt;/sys_created_on&gt;&lt;sys_id&gt;b998fee6839b1210440fb2dfeeaad3a1&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-27 21:54:12&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=b998fee6839b1210440fb2dfeeaad3a1"/&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=7598fee6839b1210440fb2dfeeaad3a0^sys_idNOT INb598fee6839b1210440fb2dfeeaad3bc,bd98fee6839b1210440fb2dfeeaad3a2,f598fee6839b1210440fb2dfeeaad3dc"/&gt;&lt;sys_complex_object action="INSERT_OR_UPDATE"&gt;&lt;label/&gt;&lt;name&gt;FDCollection&lt;/name&gt;&lt;namespace&gt;FlowDesigner&lt;/namespace&gt;&lt;scope_name&gt;global&lt;/scope_name&gt;&lt;serialized_content&gt;{"FlowDesigner:FDCollection":{"$COCollectionField":[{"FDChangeDetails":{"previous_display_value":"String","previous_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Display Value\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"previous_value":"String","previous_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"current_display_value":"String","current_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Display Value\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"current_value":"String","current_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Value\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"field_name":"String","field_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Field Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDCollection.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"}}&lt;/serialized_content&gt;&lt;sys_class_name&gt;sys_complex_object&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-06-13 23:19:20&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path/&gt;&lt;sys_id&gt;f4f014150f023300ecf0cc52ff767eed&lt;/sys_id&gt;&lt;sys_mod_count&gt;101&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Flow Designer Designer Model" source="com.glide.hub.designer_backend.model"&gt;5b965bacdcd212104f34465061b06a9b&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-09-28 05:06:11&lt;/sys_updated_on&gt;&lt;type&gt;complex_object_collection&lt;/type&gt;&lt;/sys_complex_object&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;changed_fields&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Changed Fields&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;4000&lt;/max_length&gt;&lt;model display_value="Verify if Training Schedule already exists, don't create if true"&gt;7598fee6839b1210440fb2dfeeaad3a0&lt;/model&gt;&lt;model_id&gt;7598fee6839b1210440fb2dfeeaad3a0&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_7598fee6839b1210440fb2dfeeaad3a0&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-27 21:54:12&lt;/sys_created_on&gt;&lt;sys_id&gt;b598fee6839b1210440fb2dfeeaad3bc&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Training Control"&gt;7fef0aa283d71210440fb2dfeeaad35c&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-27 21:58:53&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b598fee6839b1210440fb2dfeeaad3bc"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent&gt;table_name&lt;/dependent&gt;&lt;dependent_on_field&gt;table_name&lt;/dependent_on_field&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;current&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;document_id&lt;/internal_type&gt;&lt;label&gt;Record&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="Verify if Training Schedule already exists, don't create if true"&gt;7598fee6839b1210440fb2dfeeaad3a0&lt;/model&gt;&lt;model_id&gt;7598fee6839b1210440fb2dfeeaad3a0&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_7598fee6839b1210440fb2dfeeaad3a0&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-27 21:54:12&lt;/sys_created_on&gt;&lt;sys_id&gt;bd98fee6839b1210440fb2dfeeaad3a2&lt;/sys_id&gt;&lt;sys_mod_count&gt;9&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Training Control"&gt;7fef0aa283d71210440fb2dfeeaad35c&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-27 22:33:15&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;true&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=bd98fee6839b1210440fb2dfeeaad3a2"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;table_name&lt;/internal_type&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="Verify if Training Schedule already exists, don't create if true"&gt;7598fee6839b1210440fb2dfeeaad3a0&lt;/model&gt;&lt;model_id&gt;7598fee6839b1210440fb2dfeeaad3a0&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_7598fee6839b1210440fb2dfeeaad3a0&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;101&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-27 21:54:12&lt;/sys_created_on&gt;&lt;sys_id&gt;f598fee6839b1210440fb2dfeeaad3dc&lt;/sys_id&gt;&lt;sys_mod_count&gt;9&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Training Control"&gt;7fef0aa283d71210440fb2dfeeaad35c&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-27 22:33:15&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f598fee6839b1210440fb2dfeeaad3dc"/&gt;&lt;sys_hub_flow_output action="delete_multiple" query="model=7598fee6839b1210440fb2dfeeaad3a0"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=7598fee6839b1210440fb2dfeeaad3a0"/&gt;&lt;sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=7598fee6839b1210440fb2dfeeaad3a0^sys_idNOT IN4698fee6839b1210440fb2dfeeaad3f8"/&gt;&lt;sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="Verify if Training Schedule already exists, don't create if true"&gt;7598fee6839b1210440fb2dfeeaad3a0&lt;/flow&gt;&lt;name&gt;Created or Updated&lt;/name&gt;&lt;remote_sys_id/&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-27 21:54:13&lt;/sys_created_on&gt;&lt;sys_id&gt;4698fee6839b1210440fb2dfeeaad3f8&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-27 21:54:13&lt;/sys_updated_on&gt;&lt;trigger_definition display_value="Created or Updated"&gt;a45d9180c32222002841b63b12d3aea7&lt;/trigger_definition&gt;&lt;trigger_inputs&gt;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&lt;/trigger_inputs&gt;&lt;trigger_outputs/&gt;&lt;trigger_type&gt;record_create_or_update&lt;/trigger_type&gt;&lt;/sys_hub_trigger_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="delete_multiple" query="flow=7598fee6839b1210440fb2dfeeaad3a0^sys_idNOT IN8e98fee6839b1210440fb2dfeeaad3f7,fd98fee6839b1210440fb2dfeeaad3f6"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Update Record"&gt;f9d01dd2c31332002841b63b12d3aea1&lt;/action_type&gt;&lt;action_type_parent display_value="Update Record"&gt;baf174c8c3c232002841b63b12d3aee4&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;f9d01dd2c31332002841b63b12d3aea1&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Verify if Training Schedule already exists, don't create if true"&gt;7598fee6839b1210440fb2dfeeaad3a0&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;3&lt;/order&gt;&lt;parent_ui_id&gt;2a2de32f-6563-4929-9d9f-08c017e772b5&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-27 21:54:13&lt;/sys_created_on&gt;&lt;sys_id&gt;8e98fee6839b1210440fb2dfeeaad3f7&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Training Control"&gt;7fef0aa283d71210440fb2dfeeaad35c&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-27 22:29:04&lt;/sys_updated_on&gt;&lt;ui_id&gt;e649c1a6-506f-4a8d-8a15-843148304e76&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/+VVXYviMBT9K5JnkdaqqG+LIizMzsA468vsUNLkVgNp001SR1f873vTpio6uA7Mi6xPzf3KOcd72tcdEZyMSQ94EI7CAYvCKOoGQXfYC5NBlIRdHlGAkLRJTjPASg1MaY7nNZWlC+x2Ew3UAm8p3fpZcPcYhx1Wag253e+xlAtTSLpd+A6MsJWQHPNk/PrWJgXVONyCJuPdWepWdJImILH0uYF3DtduC3fmipUZ4opFE3zwnVOfaX2fYgabHJwwaBPYWMg5IJCUSgNtktEcWSq9JWOrSwwgf/6Uy+2hYiVyWxPN6MaIP3hzL3B1KSAz5kU4HGMvUB1Op9TSOU5mttQHvZRgYGpNOKS0lHZyGqsLngorVF63WJrIplvJMssfa0XIYcDJ/1EaBAGF4+mQ17TS+Uq9PzcgZyKvJPEUpWJUHk7UWi2S0jo4OwISKo0zWhQiX8aFVmtRNSOUrLOUeOikUr3jnUYs8w5lDncHVaWdGcanVXhBtXAkfuAYbN63idmaiaTGHKmghvHv0iGpiXkKcaVCJUFcbYJrZloU9htetQYPfN/2+5/0r20YGx0X6mTm0QObOOyPonDYj62mIhdx4B+QvGEr4KWESx+8+JLW/FjyOWPcALsxxku1Dh/T8N64iD2c9rYe64R3Rv/LnDG8J2d4GndvjX8ZIuhefeWebFLlAXNihmbhY9Ba6V9lEETcbcOlAa5Ufs4HN6BtfDATILn5AH5jAsgQooW4pnNmBJ9sLXzy8Jn4MjeEg6D63ZEn/puvxdtfg/dBHi8JAAA=&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Look Up Record"&gt;9d09f99587003300663ca1bb36cb0ba3&lt;/action_type&gt;&lt;action_type_parent display_value="Look Up Record"&gt;b93f42810b30030085c083eb37673a63&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;9d09f99587003300663ca1bb36cb0ba3&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Verify if Training Schedule already exists, don't create if true"&gt;7598fee6839b1210440fb2dfeeaad3a0&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-27 21:54:12&lt;/sys_created_on&gt;&lt;sys_id&gt;fd98fee6839b1210440fb2dfeeaad3f6&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Training Control"&gt;7fef0aa283d71210440fb2dfeeaad35c&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-27 22:33:15&lt;/sys_updated_on&gt;&lt;ui_id&gt;1ccad88a-9371-40e6-8e7b-06c300f0daf2&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/+VY227bOBD9Fa2euqjjlXx39ilINkCBtgHqbF+alqBEyiaWJlWSyhX+9x2KlOzaji9YBUiwbyY55JyZOWdI+dtTyEh4GpJxNM7G4/5oGEXdbhQNBt0Ux0nSHaRJlOBe2AoFnlOwNDjhFIa3mBd2fI/i/rgbj/rIKMwEQ5H/IaZIpzNKitKcMJ1z/PDV77r2JsFkaZLOGCeKivD02/dWmGMFDg1V4enT2tKhiDlOKLfOPOS1CMxDXg9RuebmPq5uCz67BamIhRK1QnpvqCAUMGSYa9oK51gQbKR6qGcUxeRK8OXEjAkDJ4bW+F6zR/A7iqxdRiGqlLq1eoh8ttx0doENnhhVpKZQ3jSdSZZS7fJBaIYLbs5X55zBVW6YFG6LC9vtlryYi88uHWF9QFUcmCk0gKC5DdQi92Fkk5m8+1KhvGSizIlf5DLFvB5hYxRLCmPxPIWU0zkchOY4zy0xciVvWbkZsMzbUw6DdsblHTjVbCraOLXA25BX3L6E+Yty+itWzEbxCY6BzQCIcWAIciXUslBlKm9RygtdLigstDsrXLRC/aDPOdZ6GTmkHP0sLG6XBx8xckmzW1LFcnMGR9xSH9yiVYmmv5OC4yXlUikIsyj0inI2VXG8CPYjqERwvgphGywvh425j9sO8HKIG5NDL4rekiDA+evTw/EMdynYoLmLzs2VzFuWHka7bMEd1EQEN2F9CViu3RTAT3ITvs8IKmOAZEynVLXTQkHuTPsX67aRUF0Yvfv9/U34o16DnXRy9umvs8khJ1lrux1Sghj5bS8EZ7fi+89wsai1HpOdSiNLUWmpDHKEalbsB0CoxH5l5RkkD8+h8lrPGOVk29V3aRfWrr7O//Pqe5VKB0AEueoxwZko3zEAtLkW8OtN199JvSRe41lJryX3yzms000N4MDI4PFoJRwAp1LCBHwH1w7PFojVpVdSZv3Cqya9ALqNCaDbaUYAT3WYdSK35Lx6utpqVvaP1h6v2wMFVzbEi20CO8pnfKzPzmJTwN2jFLxKNrdy8QznGn7jPqPI1ku2gBls9f6Q0y+6Y2RKzdJ7ZUWkucP8n23rnnGoKlQZ3gu8l+Odn2zJynuZZWgOlWM5POsVTYEcGmFFUSYLQZB/0C+JZCuZMaWNN95sNF/cs0SCMAMzo0FpHdTWR17E++OoUvkhC6pAvDcdQCBBGUhQB3Jc2Mc0rV6DL/Smm9YlZrysBnyr5SvlpEpJ9Uzj2lPIHYw4sKsdCCpuFNR/b3vbJLC1/e3B+iY+/JtvTSnFSa+DB8NuHEdRHJFhNBoO49EgyQZ42MuWGkVIixS6KZycAVXgeFRRo6pzvNl/fLM9rs8cAKpi4IUU9gOnMzSBRQXlDSpU+3H7fpJIySkWaw3lGpD/cVneCDVd+6+uqbyJf8EKdr2eaTe1Ndcv9Wwo2N+C/SzoB0uxEY06o5ikJ6NhPDzpZWRwMia4f4LHSX/YJTTtZU2+BL7/C2WX0rRwFgAA&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=7598fee6839b1210440fb2dfeeaad3a0"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=7598fee6839b1210440fb2dfeeaad3a0^sys_idNOT IN2c90c3a283db1210440fb2dfeeaad391,6c90c3a283db1210440fb2dfeeaad390,f198fee6839b1210440fb2dfeeaad3e8"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;c10ebeae839b1210440fb2dfeeaad30b&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Verify if Training Schedule already exists, don't create if true"&gt;7598fee6839b1210440fb2dfeeaad3a0&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="End"&gt;d176605ea76103004f27b0d2187901c7&lt;/logic_definition&gt;&lt;order&gt;5&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id&gt;ce733cdd-0066-48fc-8ea2-38a43c7aa084&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-27 22:29:04&lt;/sys_created_on&gt;&lt;sys_id&gt;2c90c3a283db1210440fb2dfeeaad391&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Training Control"&gt;7fef0aa283d71210440fb2dfeeaad35c&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-27 22:33:15&lt;/sys_updated_on&gt;&lt;ui_id&gt;7d3a7f56-577d-47d4-abfb-bf82d9265a06&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;cd0ebeae839b1210440fb2dfeeaad309&lt;/block&gt;&lt;comment/&gt;&lt;connected_to&gt;2a2de32f-6563-4929-9d9f-08c017e772b5&lt;/connected_to&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Verify if Training Schedule already exists, don't create if true"&gt;7598fee6839b1210440fb2dfeeaad3a0&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="Else"&gt;1f781bf3c32232002841b63b12d3aee6&lt;/logic_definition&gt;&lt;order&gt;4&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-27 22:29:04&lt;/sys_created_on&gt;&lt;sys_id&gt;6c90c3a283db1210440fb2dfeeaad390&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Training Control"&gt;7fef0aa283d71210440fb2dfeeaad35c&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-27 22:33:15&lt;/sys_updated_on&gt;&lt;ui_id&gt;ce733cdd-0066-48fc-8ea2-38a43c7aa084&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;878032ae835b1210440fb2dfeeaad33c&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Verify if Training Schedule already exists, don't create if true"&gt;7598fee6839b1210440fb2dfeeaad3a0&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="If"&gt;af4e1945c3e232002841b63b12d3ae3e&lt;/logic_definition&gt;&lt;order&gt;2&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-27 21:54:12&lt;/sys_created_on&gt;&lt;sys_id&gt;f198fee6839b1210440fb2dfeeaad3e8&lt;/sys_id&gt;&lt;sys_mod_count&gt;12&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Training Control"&gt;7fef0aa283d71210440fb2dfeeaad35c&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-27 22:33:15&lt;/sys_updated_on&gt;&lt;ui_id&gt;2a2de32f-6563-4929-9d9f-08c017e772b5&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/+1VXU/bMBT9K8jPaeQkbSl9QyCkSWxIo+JlQ9GN7bTWXDvzB9BF/e+7TtIWQSfGtse91cf345wTH7UlJvgmeLcw587JpSbzL/cJkTpi+LslGtaCzAkzmksvjS47ICEPoEK8WFiQWurlyS1bCR6UOBFP0mFzQrh0jYLN3duVbCUVt2LY3oDFHV5YMm9fXEmOg2oKdXbGMlbk0yKnNJ+Ns2paVFnOCxBQ4EAFlVBYerGjfXLdIckv9fhNE3HnLVIcztfDlNsdaCyPrDKaEPHkheYC+dSgnEjIGjQHb+xmj1gB/EarA7CS2uM4EoufnPyBC/PJJBbWAiUy0V/uj+XgYA/Xl+ABqQTmgx1K2cpIJlxvDhc1BOUvnmN9wU0TpfYtHiq16zYqrPWn3hGyH7D7YIgEhyREE5VG6oOO+nZlHj/vWF5J3bkyXCrDQO1P4NG7KvjIpyVCiTUOKtfQNOho2VjzILtm5LJOlwoPaa3MIy6NrzEFFomnaCykV4hfdvAdWBlVfMQx2NzTrMBJVnYvF8ehTYJsE+I27kKBcweR6G75PUSKveRBXNn7E1uYlY0/x80PYtCxTV4H4VkG2jZjDPhsBqOz4jQbjamYjmbitBrRKSsorSmHOk+dBx/cdvs1UFpw+johfzznffk5g0k9yejkeH7G02P5OZKcd4YmfyM08Yv9ZmYopf9D89ehka7sn/qgrVv+DzNzHwPS79x7zaRDaouIfdj9x8SLDT4uyZ5Dj8Z+i6IO2PYnEQTyV60GAAA=&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=7598fee6839b1210440fb2dfeeaad3a0"/&gt;&lt;sys_hub_flow_variable action="delete_multiple" query="model=7598fee6839b1210440fb2dfeeaad3a0"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_7598fee6839b1210440fb2dfeeaad3a0^sys_idNOT IN3d98fee6839b1210440fb2dfeeaad3b9,7d98fee6839b1210440fb2dfeeaad3e0,fd98fee6839b1210440fb2dfeeaad3c0"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;current&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Record&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_7598fee6839b1210440fb2dfeeaad3a0&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-27 21:54:12&lt;/sys_created_on&gt;&lt;sys_id&gt;3d98fee6839b1210440fb2dfeeaad3b9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Training Control" source="x_1593185_traini_0"&gt;7fef0aa283d71210440fb2dfeeaad35c&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Training Control"&gt;7fef0aa283d71210440fb2dfeeaad35c&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-27 21:54:12&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_7598fee6839b1210440fb2dfeeaad3a0&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-27 21:54:12&lt;/sys_created_on&gt;&lt;sys_id&gt;7d98fee6839b1210440fb2dfeeaad3e0&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Training Control" source="x_1593185_traini_0"&gt;7fef0aa283d71210440fb2dfeeaad35c&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Training Control"&gt;7fef0aa283d71210440fb2dfeeaad35c&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-27 21:54:12&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;changed_fields&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Changed Fields&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_7598fee6839b1210440fb2dfeeaad3a0&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-27 21:54:12&lt;/sys_created_on&gt;&lt;sys_id&gt;fd98fee6839b1210440fb2dfeeaad3c0&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Training Control" source="x_1593185_traini_0"&gt;7fef0aa283d71210440fb2dfeeaad35c&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Training Control"&gt;7fef0aa283d71210440fb2dfeeaad35c&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-27 21:54:12&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_7598fee6839b1210440fb2dfeeaad3a0"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_7598fee6839b1210440fb2dfeeaad3a0"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_7598fee6839b1210440fb2dfeeaad3a0"/&gt;&lt;sys_hub_flow action="UPDATE"&gt;&lt;sys_id&gt;9b1feaea835b1210440fb2dfeeaad373&lt;/sys_id&gt;&lt;latest_snapshot&gt;7598fee6839b1210440fb2dfeeaad3a0&lt;/latest_snapshot&gt;&lt;compiler_build&gt;glide-xanadu-07-02-2024__patch4-11-22-2024_12-02-2024_1408.zip&lt;/compiler_build&gt;&lt;/sys_hub_flow&gt;&lt;sys_flow_trigger_plan action="delete_multiple" query="plan_id=9b1feaea835b1210440fb2dfeeaad373^sys_idNOT IN4e98322a839b1210440fb2dfeeaad308"/&gt;&lt;sys_flow_trigger_plan action="INSERT_OR_UPDATE"&gt;&lt;binding_strategy&gt;com.snc.process_flow.engine.binding.Every&lt;/binding_strategy&gt;&lt;plan&gt;{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"4e98322a839b1210440fb2dfeeaad308","name":"plan","plan_signature":null}}&lt;/plan&gt;&lt;plan_id&gt;9b1feaea835b1210440fb2dfeeaad373&lt;/plan_id&gt;&lt;snapshot&gt;7598fee6839b1210440fb2dfeeaad3a0&lt;/snapshot&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-27 21:54:13&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;4e98322a839b1210440fb2dfeeaad308&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_overrides/&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-27 22:33:15&lt;/sys_updated_on&gt;&lt;trigger display_value=""&gt;0e98322a839b1210440fb2dfeeaad306&lt;/trigger&gt;&lt;/sys_flow_trigger_plan&gt;&lt;sys_flow_subflow_plan action="delete_multiple" query="plan_id=9b1feaea835b1210440fb2dfeeaad373"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1917775779</payload_hash>
+        <record_name>Verify if Training Schedule already exists, don't create if true</record_name>
+        <reverted_from/>
+        <source>60a2a2aa831b1210440fb2dfeeaad3ca</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 22:33:16</sys_created_on>
+        <sys_id>8a814be283db1210440fb2dfeeaad3b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194a9e5c8c20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 22:33:16</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>02814be29fdb1210825469d7a62b80b9</update_guid>
+        <update_guid_history>02814be29fdb1210825469d7a62b80b9:1917775779,ad814be244db121082d7a933a2179e27:1181631752,c1810be200db12104ccd328ed45f86c0:1938827630,cb018fa211db121016a3f9b8ae489f94:750194696,66014fa2c7db1210044a2c2a6bef1dc3:-2025944821,31014fa25edb1210481016453f260918:-1268748943,7090c3a29fdb12103682540212c18fd3:457222194,d090c3a2a0db12101e082187b6bab534:-113259899,0840cb623fdb12109497ed7b044cbbd6:-1101538977,4d0ebeae459b12105b92295cba13a92b:-1496224729,51eb362eab9b12108d5177b1fdd99805:814948488,f0ebf22e389b1210277a0edf10373351:1297833600,c8ebf22ecc9b12105da1dcb030cb5505:278458650,66a9f66a389b12108595e44da1328b7a:-729387762,4aa9b66a1f9b1210df87a2d49bf4fff0:-222807623,e9a9b66a5b9b1210ea49a202283c8a9d:833963547,8698322aab9b12103f70cd8380c3fe16:-789137494,2598fee67f9b12100fd95fb67a1ea48d:-1135677261,15887ee6289b121010d1449066b725ac:1873130287,86587ae6fe9b121021fb263edc99cd76:-2060038752,578032ae915b1210ffed48e289831c4b:1808589121,631feaea785b121052c1b6f30926cb7b:-1705372036</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 22:34:01</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>09fb1787919f4e5380d4a5e894940851</sys_id>
+        <sys_metadata>9b1feaea835b1210440fb2dfeeaad373</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Verify if Training Schedule already exists, don't create if true</sys_name>
+        <sys_package display_value="Training Control" source="x_1593185_traini_0">7fef0aa283d71210440fb2dfeeaad35c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</sys_scope>
+        <sys_scope_delete display_value="">216de52f3b694e92a3287d9860cfebd9</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_9b1feaea835b1210440fb2dfeeaad373</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_9b1feaea835b1210440fb2dfeeaad373">8a814be283db1210440fb2dfeeaad3b9</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 22:34:01</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

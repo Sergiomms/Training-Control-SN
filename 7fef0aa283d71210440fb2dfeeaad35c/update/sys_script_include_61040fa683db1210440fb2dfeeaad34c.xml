@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1593185_traini_0.Instructor_Role</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>Instructor_Role</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var Instructor_Role = Class.create();
+Instructor_Role.prototype = {
+    initialize: function() {
+    },
+
+	getInstructorRole: function() {
+		var roleG = new GlideRecord("sys_user_has_role");
+
+		roleG.addEncodedQuery("role.name=x_1593185_traini_0.training_instructor");
+		roleG.query();
+
+		var instructorUser = [];
+
+		while(roleG.next()) {
+			instructorUser.push(roleG.getValue("user"));
+		}
+
+		return "sys_idIN" + instructorUser;
+
+	},
+
+    type: 'Instructor_Role'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 22:57:01</sys_created_on>
+        <sys_id>61040fa683db1210440fb2dfeeaad34c</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Instructor_Role</sys_name>
+        <sys_package display_value="Training Control" source="x_1593185_traini_0">7fef0aa283d71210440fb2dfeeaad35c</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</sys_scope>
+        <sys_update_name>sys_script_include_61040fa683db1210440fb2dfeeaad34c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 23:18:35</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>61040fa683db1210440fb2dfeeaad34c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 22:57:01</sys_created_on>
+        <sys_id>fdf6cf6a83db1210440fb2dfeeaad3af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 22:57:01</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Show error message</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+    //Type appropriate comment here, and begin script below
+
+    //Type appropriate comment here, and begin script below
+    if (g_form.getValue("schedule_error") == true) {
+        g_form.addErrorMessage("integration_error_message");
+
+    } else {
+        g_form.clearMessages();
+    }
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 21:52:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>07877aa6839b1210440fb2dfeeaad3e5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Show error message</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Training Control" source="x_1593185_traini_0">7fef0aa283d71210440fb2dfeeaad35c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</sys_scope>
+        <sys_update_name>sys_script_client_07877aa6839b1210440fb2dfeeaad3e5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 22:13:34</sys_updated_on>
+        <table>x_1593185_traini_0_training_schedule</table>
+        <type>onSubmit</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</application>
+        <file_path/>
+        <instance_id>d8e710dadbd2fd5037d72a5913961980</instance_id>
+        <instance_name>dev206006</instance_name>
+        <name>sys_script_client_07877aa6839b1210440fb2dfeeaad3e5</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Show error message&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onSubmit() {
+    //Type appropriate comment here, and begin script below
+
+    //Type appropriate comment here, and begin script below
+    if (g_form.getValue("schedule_error") == true) {
+        g_form.addErrorMessage("integration_error_message");
+
+    } else {
+        g_form.clearMessages();
+    }
+
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-27 21:52:19&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;07877aa6839b1210440fb2dfeeaad3e5&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Show error message&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Training Control" source="x_1593185_traini_0"&gt;7fef0aa283d71210440fb2dfeeaad35c&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Training Control"&gt;7fef0aa283d71210440fb2dfeeaad35c&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_07877aa6839b1210440fb2dfeeaad3e5&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-27 22:13:34&lt;/sys_updated_on&gt;&lt;table&gt;x_1593185_traini_0_training_schedule&lt;/table&gt;&lt;type&gt;onSubmit&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-739173407</payload_hash>
+        <record_name>Show error message</record_name>
+        <reverted_from/>
+        <source>60a2a2aa831b1210440fb2dfeeaad3ca</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 22:13:34</sys_created_on>
+        <sys_id>9d0dfa6e839b1210440fb2dfeeaad38a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194a9d3bf350000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 22:13:34</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>910dfa6ea99b121081b6d8094134a88a</update_guid>
+        <update_guid_history>910dfa6ea99b121081b6d8094134a88a:-739173407,da28b6a6b99b121045e126c1d808da23:-1313158294</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 22:34:58</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>055d4757055344a3ad3c980905161b91</sys_id>
+        <sys_metadata>07877aa6839b1210440fb2dfeeaad3e5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Show error message</sys_name>
+        <sys_package display_value="Training Control" source="x_1593185_traini_0">7fef0aa283d71210440fb2dfeeaad35c</sys_package>
+        <sys_parent display_value="Training Schedule">cd949a2a83d71210440fb2dfeeaad319</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</sys_scope>
+        <sys_scope_delete display_value="">216de52f3b694e92a3287d9860cfebd9</sys_scope_delete>
+        <sys_update_name>sys_script_client_07877aa6839b1210440fb2dfeeaad3e5</sys_update_name>
+        <sys_update_version display_value="sys_script_client_07877aa6839b1210440fb2dfeeaad3e5">9d0dfa6e839b1210440fb2dfeeaad38a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 22:34:58</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
