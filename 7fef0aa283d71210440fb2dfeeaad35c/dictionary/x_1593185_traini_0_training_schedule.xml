@@ -6,7 +6,7 @@
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
         <element display="true" label="Training Date" mandatory="true" max_length="40" name="training_date" type="glide_date"/>
         <element label="Training Name" mandatory="true" max_length="32" name="training_name" reference="x_1593185_traini_0_training" type="reference"/>
-        <element default="0" label="Number of Enrolled" max_length="40" name="number_of_enrolled" read_only="true" type="integer"/>
+        <element default="0" label="Number of Enrolled" max_length="40" name="number_of_enrolled" type="integer"/>
         <index name="index">
             <element name="training_name"/>
         </index>

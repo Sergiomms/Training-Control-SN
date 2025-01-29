@@ -38,12 +38,11 @@
         <message/>
         <message_html><![CDATA[<p>Hello, ${opened_by}!</p>
 <p>&nbsp;</p>
-<p>Your request to join the Training: ${training_name} was automatically rejected, because you already have a registration for the same training and on the same date <br><br>OR <br><br>because you have already completed the training 3 times.</p>
-<p>&nbsp;</p>
+<p>Your request to join the Training: ${training_name} was automatically rejected, because you are the instructor for that training.&nbsp;<br><br></p>
 <p>yours sincerely.</p>]]></message_html>
         <message_list/>
         <message_text/>
-        <name>Enrollment Auto Rejected</name>
+        <name>Instructor Enrollment Auto Rejected</name>
         <omit_watermark>false</omit_watermark>
         <order>100</order>
         <push_message_only>false</push_message_only>
@@ -58,19 +57,19 @@
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-01-28 18:04:47</sys_created_on>
+        <sys_created_on>2025-01-29 12:21:41</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>3f3dc3f283df5210440fb2dfeeaad3c9</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_name>Enrollment Auto Rejected</sys_name>
+        <sys_id>14884b4f8353d210440fb2dfeeaad333</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Instructor Enrollment Auto Rejected</sys_name>
         <sys_overrides/>
         <sys_package display_value="Training Control" source="x_1593185_traini_0">7fef0aa283d71210440fb2dfeeaad35c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</sys_scope>
-        <sys_update_name>sysevent_email_action_3f3dc3f283df5210440fb2dfeeaad3c9</sys_update_name>
+        <sys_update_name>sysevent_email_action_14884b4f8353d210440fb2dfeeaad333</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-29 12:52:18</sys_updated_on>
+        <sys_updated_on>2025-01-29 12:52:45</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>
