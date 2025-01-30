@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>true</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1593185_traini_0_training_enrollment</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Trigger Subflow before delete enrollment</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    // Define os inputs do Subflow
+    var inputs = {
+        training_id: current.getValue('training_date'), // ID da agenda
+    };
+
+	gs.info('DEBUG: ' + inputs);
+
+    // Chama o Subflow pelo sys_id
+    var subflowSysId = '3D364850a783171210440fb2dfeeaad3fa';
+    // // var result = sn_fd.FlowAPI.startSubflow(subflowSysId, inputs);
+
+    var result = sn_fd.FlowAPI.getRunner().subflow('Handle Delete Enrollment').inBackground().withInputs(inputs).run();
+
+    gs.info('DEBUG: ' + 'Subflow iniciado com ID: ' + result);
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 12:53:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a8b81ca783171210440fb2dfeeaad383</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Trigger Subflow before delete enrollment</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Training Control" source="x_1593185_traini_0">7fef0aa283d71210440fb2dfeeaad35c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</sys_scope>
+        <sys_update_name>sys_script_a8b81ca783171210440fb2dfeeaad383</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 14:16:22</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=a8b81ca783171210440fb2dfeeaad383"/>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>a8b81ca783171210440fb2dfeeaad383</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 12:53:21</sys_created_on>
+        <sys_id>6099946783171210440fb2dfeeaad354</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 12:53:21</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

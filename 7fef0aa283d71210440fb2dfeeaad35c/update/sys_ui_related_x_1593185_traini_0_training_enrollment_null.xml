@@ -2,17 +2,31 @@
     <sys_ui_related sys_domain="global" table="x_1593185_traini_0_training_enrollment" version="2" view="">
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Training Enrollment - Default view" name="x_1593185_traini_0_training_enrollment" related_list="NULL" sys_domain="global" view="Default view">d1ae17f683139210440fb2dfeeaad30a</list_id>
+            <list_id display_value="Training Enrollment - Default view" name="x_1593185_traini_0_training_enrollment" related_list="NULL" sys_domain="global" view="Default view">fb7669a7839b1210440fb2dfeeaad37b</list_id>
             <order_by/>
             <position>0</position>
             <related_list>sysapproval_approver.sysapproval</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-01-28 19:18:56</sys_created_on>
-            <sys_id>d5ae17f683139210440fb2dfeeaad30b</sys_id>
+            <sys_created_on>2025-01-30 18:29:26</sys_created_on>
+            <sys_id>777669a7839b1210440fb2dfeeaad37d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-01-28 19:18:56</sys_updated_on>
+            <sys_updated_on>2025-01-30 18:29:26</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Training Enrollment - Default view" name="x_1593185_traini_0_training_enrollment" related_list="NULL" sys_domain="global" view="Default view">fb7669a7839b1210440fb2dfeeaad37b</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>task_sla.task</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-01-30 18:29:26</sys_created_on>
+            <sys_id>bf7669a7839b1210440fb2dfeeaad37d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-01-30 18:29:26</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list action="INSERT_OR_UPDATE">
             <calculated_name>Training Enrollment - Default view</calculated_name>
@@ -23,10 +37,10 @@
             <related_list/>
             <sys_class_name>sys_ui_related_list</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-01-28 19:18:56</sys_created_on>
+            <sys_created_on>2025-01-30 18:29:26</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>d1ae17f683139210440fb2dfeeaad30a</sys_id>
+            <sys_id>fb7669a7839b1210440fb2dfeeaad37b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Training Enrollment - Default view</sys_name>
             <sys_package display_value="Training Control" source="x_1593185_traini_0">7fef0aa283d71210440fb2dfeeaad35c</sys_package>
@@ -34,7 +48,7 @@
             <sys_scope display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</sys_scope>
             <sys_update_name>sys_ui_related_x_1593185_traini_0_training_enrollment_null</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-01-28 19:18:56</sys_updated_on>
+            <sys_updated_on>2025-01-30 18:29:26</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>
