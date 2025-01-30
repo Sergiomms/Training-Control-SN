@@ -4,13 +4,13 @@
             <element>process_flow.xml</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-01-29 14:20:10</sys_created_on>
-            <sys_id>aad32f038317d210440fb2dfeeaad3a2</sys_id>
+            <sys_created_on>2025-01-30 11:20:32</sys_created_on>
+            <sys_id>0d54046f83931210440fb2dfeeaad3d5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter display_value="Process Flow">5243afcf83d3d210440fb2dfeeaad36c</sys_ui_formatter>
             <sys_ui_section caption="NULL" display_value="" name="x_1593185_traini_0_training_enrollment" sys_domain="global" view="Default view">8b0fd226831b1210440fb2dfeeaad36c</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-01-29 14:20:10</sys_updated_on>
+            <sys_updated_on>2025-01-30 11:20:32</sys_updated_on>
             <sys_user/>
             <type>formatter</type>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>.begin_split</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-01-29 14:20:10</sys_created_on>
-            <sys_id>aad32f038317d210440fb2dfeeaad3a3</sys_id>
+            <sys_created_on>2025-01-30 11:20:32</sys_created_on>
+            <sys_id>c554046f83931210440fb2dfeeaad3d6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1593185_traini_0_training_enrollment" sys_domain="global" view="Default view">8b0fd226831b1210440fb2dfeeaad36c</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-01-29 14:20:10</sys_updated_on>
+            <sys_updated_on>2025-01-30 11:20:32</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>number</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-01-29 14:20:10</sys_created_on>
-            <sys_id>22d32f038317d210440fb2dfeeaad3a4</sys_id>
+            <sys_created_on>2025-01-30 11:20:32</sys_created_on>
+            <sys_id>4d54046f83931210440fb2dfeeaad3d6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1593185_traini_0_training_enrollment" sys_domain="global" view="Default view">8b0fd226831b1210440fb2dfeeaad36c</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-01-29 14:20:10</sys_updated_on>
+            <sys_updated_on>2025-01-30 11:20:32</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>training_name</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-01-29 14:20:10</sys_created_on>
-            <sys_id>a6d32f038317d210440fb2dfeeaad3a4</sys_id>
+            <sys_created_on>2025-01-30 11:20:32</sys_created_on>
+            <sys_id>c154046f83931210440fb2dfeeaad3d7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1593185_traini_0_training_enrollment" sys_domain="global" view="Default view">8b0fd226831b1210440fb2dfeeaad36c</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-01-29 14:20:10</sys_updated_on>
+            <sys_updated_on>2025-01-30 11:20:32</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>opened_by</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-01-29 14:20:10</sys_created_on>
-            <sys_id>eed32f038317d210440fb2dfeeaad3e2</sys_id>
+            <sys_created_on>2025-01-30 11:20:32</sys_created_on>
+            <sys_id>4954046f83931210440fb2dfeeaad3d7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1593185_traini_0_training_enrollment" sys_domain="global" view="Default view">8b0fd226831b1210440fb2dfeeaad36c</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-01-29 14:20:10</sys_updated_on>
+            <sys_updated_on>2025-01-30 11:20:32</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -74,13 +74,13 @@
             <element>.split</element>
             <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-01-29 14:20:10</sys_created_on>
-            <sys_id>66d32f038317d210440fb2dfeeaad3e3</sys_id>
+            <sys_created_on>2025-01-30 11:20:32</sys_created_on>
+            <sys_id>cd54046f83931210440fb2dfeeaad3d7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1593185_traini_0_training_enrollment" sys_domain="global" view="Default view">8b0fd226831b1210440fb2dfeeaad36c</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-01-29 14:20:10</sys_updated_on>
+            <sys_updated_on>2025-01-30 11:20:32</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -88,13 +88,13 @@
             <element>state</element>
             <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-01-29 14:20:10</sys_created_on>
-            <sys_id>ead32f038317d210440fb2dfeeaad3e3</sys_id>
+            <sys_created_on>2025-01-30 11:20:32</sys_created_on>
+            <sys_id>4554046f83931210440fb2dfeeaad3d8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1593185_traini_0_training_enrollment" sys_domain="global" view="Default view">8b0fd226831b1210440fb2dfeeaad36c</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-01-29 14:20:10</sys_updated_on>
+            <sys_updated_on>2025-01-30 11:20:32</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -102,13 +102,27 @@
             <element>training_date</element>
             <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-01-29 14:20:10</sys_created_on>
-            <sys_id>62d32f038317d210440fb2dfeeaad3e4</sys_id>
+            <sys_created_on>2025-01-30 11:20:32</sys_created_on>
+            <sys_id>c954046f83931210440fb2dfeeaad3d8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1593185_traini_0_training_enrollment" sys_domain="global" view="Default view">8b0fd226831b1210440fb2dfeeaad36c</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-01-29 14:20:10</sys_updated_on>
+            <sys_updated_on>2025-01-30 11:20:32</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sys_created_by</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-01-30 11:20:32</sys_created_on>
+            <sys_id>4154046f83931210440fb2dfeeaad3d9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1593185_traini_0_training_enrollment" sys_domain="global" view="Default view">8b0fd226831b1210440fb2dfeeaad36c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-01-30 11:20:32</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

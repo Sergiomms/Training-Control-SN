@@ -2,7 +2,6 @@
     <element db_object_id="cd949a2a83d71210440fb2dfeeaad319" label="Training Schedule" max_length="40" name="x_1593185_traini_0_training_schedule" type="collection">
         <element label="Instructor" mandatory="true" max_length="40" name="instructor" reference="sys_user" reference_qual="javascript: new Instructor_Role().getInstructorRole();" type="reference" use_reference_qualifier="advanced"/>
         <element label="Quantity of Places" mandatory="true" max_length="40" name="quantity_of_places" type="integer"/>
-        <element default="False" label="Schedule Error" max_length="40" name="schedule_error" read_only="true" type="boolean"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
         <element display="true" label="Training Date" mandatory="true" max_length="40" name="training_date" type="glide_date"/>
         <element label="Training Name" mandatory="true" max_length="32" name="training_name" reference="x_1593185_traini_0_training" type="reference"/>

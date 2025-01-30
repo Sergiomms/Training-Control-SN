@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="220f5e66831b1210440fb2dfeeaad3f7" extends="task" label="Training Enrollment" max_length="40" name="x_1593185_traini_0_training_enrollment" type="collection">
         <element label="Training Name" max_length="32" name="training_name" reference="x_1593185_traini_0_training" type="reference"/>
-        <element label="Training Date" max_length="32" name="training_date" reference="x_1593185_traini_0_training_schedule" type="reference"/>
+        <element label="Training Date" max_length="32" name="training_date" reference="x_1593185_traini_0_training_schedule" reference_floats="true" type="reference"/>
     </element>
 </database>
