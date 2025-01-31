@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1593185_traini_0.SendInstructorReport</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>SendInstructorReport</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var SendInstructorReport = Class.create();
+SendInstructorReport.prototype = {
+    initialize: function() {},
+
+    sendReport: function(trainingID) {
+        // var email = new GlideEmailOutbound();
+		var instructorId = '';
+        var instructorEmail = "";
+        var trainingNameId = "";
+		var trainingName = "";
+        var trainingDate = "";
+        var studentList = [];
+
+        // Buscar o curso
+        var training = new GlideRecord('x_1593185_traini_0_training_schedule');
+        if (training.get(trainingID)) {
+            instructorId = training.getValue('instructor'); // Pega o id do instrutor
+            trainingNameId = training.getValue('training_name');
+            trainingDate = training.getValue('training_date');
+        }
+
+		
+
+		// pega o nome do treinamento
+		var trainingTable = new GlideRecord('x_1593185_traini_0_training');
+		trainingTable.get(trainingNameId);
+		trainingName = trainingTable.getValue('training_name');
+
+		// Pega o email do instrutor
+        var sysUserId = new GlideRecord('sys_user');
+        sysUserId.get(instructorId);
+        instructorEmail = sysUserId.getValue('email');
+
+
+        // Buscar alunos matriculados com status "Aprovado" ou "Aguardando Aprovação"
+        var enrollment = new GlideRecord('x_1593185_traini_0_training_enrollment');
+		enrollment.addEncodedQuery('state=2^ORstate=3^training_name=' + trainingNameId);
+        enrollment.query();
+
+		// var teste = "";
+        while (enrollment.next()) {
+            studentList.push(enrollment.getValue('opened_by'));
+        }
+
+        // Se houver alunos elegíveis, enviar e-mail
+        if (studentList.length > 0 && instructorEmail) {
+            var subject = "Relatório de Alunos Matriculados - " + trainingName;
+            var body = "Olá, segue a lista de alunos matriculados no curso: <br><br>" +
+                "<b>Curso:</b> " + trainingName + "<br>" +
+                "<b>Data:</b> " + trainingDate + "<br><br>" +
+                "<b>Alunos Matriculados:</b><br>" +
+                studentList.join("<br>") + "<br><br>" +
+                "Atenciosamente,<br>Equipe de Treinamentos";
+
+            // email.setSubject(subject);
+            // email.setBody(body);
+            // email.setFrom("training@aoop.com.br");
+            // email.addRecipient("to", instructorEmail);
+            // email.save();
+			
+			gs.info(studentList.join(","));
+
+            return "E-mail enviado com sucesso para " + instructorEmail;
+        } else {
+            return "Nenhum aluno matriculado ou e-mail do instrutor não encontrado.";
+        }
+    },
+
+    type: 'SendInstructorReport'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 23:32:28</sys_created_on>
+        <sys_id>20d5aee383df1210440fb2dfeeaad3bb</sys_id>
+        <sys_mod_count>39</sys_mod_count>
+        <sys_name>SendInstructorReport</sys_name>
+        <sys_package display_value="Training Control" source="x_1593185_traini_0">7fef0aa283d71210440fb2dfeeaad35c</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</sys_scope>
+        <sys_update_name>sys_script_include_20d5aee383df1210440fb2dfeeaad3bb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 12:27:13</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="DELETE">
+        <id>20d5aee383df1210440fb2dfeeaad3bb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 23:32:27</sys_created_on>
+        <sys_id>66db26ab83df1210440fb2dfeeaad39a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 23:32:27</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</application>
+        <file_path/>
+        <instance_id>d8e710dadbd2fd5037d72a5913961980</instance_id>
+        <instance_name>dev206006</instance_name>
+        <name>sys_script_include_20d5aee383df1210440fb2dfeeaad3bb</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_1593185_traini_0.SendInstructorReport&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;SendInstructorReport&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var SendInstructorReport = Class.create();
+SendInstructorReport.prototype = {
+    initialize: function() {},
+
+    sendReport: function(trainingID) {
+        // var email = new GlideEmailOutbound();
+		var instructorId = '';
+        var instructorEmail = "";
+        var trainingNameId = "";
+		var trainingName = "";
+        var trainingDate = "";
+        var studentList = [];
+
+        // Buscar o curso
+        var training = new GlideRecord('x_1593185_traini_0_training_schedule');
+        if (training.get(trainingID)) {
+            instructorId = training.getValue('instructor'); // Pega o id do instrutor
+            trainingNameId = training.getValue('training_name');
+            trainingDate = training.getValue('training_date');
+        }
+
+		
+
+		// pega o nome do treinamento
+		var trainingTable = new GlideRecord('x_1593185_traini_0_training');
+		trainingTable.get(trainingNameId);
+		trainingName = trainingTable.getValue('training_name');
+
+		// Pega o email do instrutor
+        var sysUserId = new GlideRecord('sys_user');
+        sysUserId.get(instructorId);
+        instructorEmail = sysUserId.getValue('email');
+
+
+        // Buscar alunos matriculados com status "Aprovado" ou "Aguardando Aprovação"
+        var enrollment = new GlideRecord('x_1593185_traini_0_training_enrollment');
+		enrollment.addEncodedQuery('state=2^ORstate=3^training_name=' + trainingNameId);
+        enrollment.query();
+
+		// var teste = "";
+        while (enrollment.next()) {
+            studentList.push(enrollment.getValue('opened_by'));
+        }
+
+        // Se houver alunos elegíveis, enviar e-mail
+        if (studentList.length &gt; 0 &amp;&amp; instructorEmail) {
+            var subject = "Relatório de Alunos Matriculados - " + trainingName;
+            var body = "Olá, segue a lista de alunos matriculados no curso: &lt;br&gt;&lt;br&gt;" +
+                "&lt;b&gt;Curso:&lt;/b&gt; " + trainingName + "&lt;br&gt;" +
+                "&lt;b&gt;Data:&lt;/b&gt; " + trainingDate + "&lt;br&gt;&lt;br&gt;" +
+                "&lt;b&gt;Alunos Matriculados:&lt;/b&gt;&lt;br&gt;" +
+                studentList.join("&lt;br&gt;") + "&lt;br&gt;&lt;br&gt;" +
+                "Atenciosamente,&lt;br&gt;Equipe de Treinamentos";
+
+            // email.setSubject(subject);
+            // email.setBody(body);
+            // email.setFrom("training@aoop.com.br");
+            // email.addRecipient("to", instructorEmail);
+            // email.save();
+			
+			gs.info(studentList.join(","));
+
+            return "E-mail enviado com sucesso para " + instructorEmail;
+        } else {
+            return "Nenhum aluno matriculado ou e-mail do instrutor não encontrado.";
+        }
+    },
+
+    type: 'SendInstructorReport'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-30 23:32:28&lt;/sys_created_on&gt;&lt;sys_id&gt;20d5aee383df1210440fb2dfeeaad3bb&lt;/sys_id&gt;&lt;sys_mod_count&gt;39&lt;/sys_mod_count&gt;&lt;sys_name&gt;SendInstructorReport&lt;/sys_name&gt;&lt;sys_package display_value="Training Control" source="x_1593185_traini_0"&gt;7fef0aa283d71210440fb2dfeeaad35c&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Training Control"&gt;7fef0aa283d71210440fb2dfeeaad35c&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_20d5aee383df1210440fb2dfeeaad3bb&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-31 12:27:13&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;20d5aee383df1210440fb2dfeeaad3bb&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-30 23:32:27&lt;/sys_created_on&gt;&lt;sys_id&gt;66db26ab83df1210440fb2dfeeaad39a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-30 23:32:27&lt;/sys_updated_on&gt;&lt;table&gt;sys_script_include&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1111513090</payload_hash>
+        <record_name>SendInstructorReport</record_name>
+        <reverted_from/>
+        <source>60a2a2aa831b1210440fb2dfeeaad3ca</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 12:27:13</sys_created_on>
+        <sys_id>e32d917f831f5210440fb2dfeeaad318</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194bc5460580000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 12:27:13</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>6b2d917f3b1f521066e502a831f1ab17</update_guid>
+        <update_guid_history>6b2d917f3b1f521066e502a831f1ab17:1111513090,f50d99fbbf1f52103ae430083cbbfaea:-1718907573,8d8ad57b551f5210e5921039ae19f482:1310786633,30e911fb831f521051d223f6ecbacd08:-278407998,e25999f7031f5210630467dccbdd1004:219645988,081815f7331f5210c816d5b6e0c88b0c:1417211546,4ee615f7081f5210fb2cccfa23342905:698877319,532655f3321f52103633e47cc11e2ac3:-1798384154,098595b7721f52108fd94d340e035de2:265444966,21c15fe765935210e0e690862b1d0363:-474529904,9f919b6b8993521041077172d4f6b63c:1318322253,d1511fe76593521044b102e605163e10:-1899367342,93709b2b3c935210dc4775a22d8d8f77:1803307668,02601b2b2693521025472b901a8ed285:1683425338,f4109be72b935210e3277b6bf001d908:-848670248,5ccfcbe792935210ccca1ca3ac4d4567:163267058,fa9f0be74f935210e60056a4668923d3:-498540086,748f87e73b935210ff93e0e85da8c297:-1483298086,dc1fcf6753935210fd79d801834e5462:-1022406346,a75e0ba39e93521017b4cecd2ca7f8e7:1717181486,5c5ecf676b93521093a1926eaf74f407:-147604361,6c2bcf6372935210e45cb8ba5cf539a0:1641113078,180b4bef50535210683e73c20d390f1f:197968688,fd56072f6f535210c5f2ee8fa1ad14b9:1330375014,f336c32f735352100e9191569a47ef13:1144235773,d5f54bebf853521071ada5eedb2b7c77:-277255836,0fb543aba953521031a1dd3eaee35d86:-554316556,3f85c76b2653521085c5bd20220e202b:-1015733833,d944c76bc753521047ad29654800c812:-1690899394,9ee3832b0153521095569093ffeb22dc:1236514052,427307677653521032c08eadd6dc9d6f:1505382077,93e24b678553521090042572a025153d:821009389,86e1cb67ae535210034b8fbc71577884:-1800599705,ac414b67c65352105df6a361aad932e2:1681745683,82c04b6797535210875c18b333810fd7:1061119379,016043671f5352107d4362144a5b7a64:-1431129067,92be72e3c153521093b1a71b2ba6c1c4:321473981,a19cf223b65352104bd6fbed869ac992:-1319032840,db453a2790135210082248564293444c:-509463751,3adbe2ebd7df12102563cb94cb0047fc:-2141364966</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 12:48:47</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>16a4b350f00544aabeed180541b192e1</sys_id>
+        <sys_metadata>20d5aee383df1210440fb2dfeeaad3bb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SendInstructorReport</sys_name>
+        <sys_package display_value="Training Control" source="x_1593185_traini_0">7fef0aa283d71210440fb2dfeeaad35c</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</sys_scope>
+        <sys_scope_delete display_value="">216de52f3b694e92a3287d9860cfebd9</sys_scope_delete>
+        <sys_update_name>sys_script_include_20d5aee383df1210440fb2dfeeaad3bb</sys_update_name>
+        <sys_update_version display_value="sys_script_include_20d5aee383df1210440fb2dfeeaad3bb">e32d917f831f5210440fb2dfeeaad318</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 12:48:47</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

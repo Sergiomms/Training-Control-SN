@@ -1,28 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
     <sys_script_include action="INSERT_OR_UPDATE">
-        <access>package_private</access>
-        <active>false</active>
+        <access>public</access>
+        <active>true</active>
         <api_name>x_1593185_traini_0.FutureCoursesFilter </api_name>
         <caller_access/>
-        <client_callable>true</client_callable>
+        <client_callable>false</client_callable>
         <description/>
         <mobile_callable>false</mobile_callable>
         <name>FutureCoursesFilter </name>
         <sandbox_callable>false</sandbox_callable>
         <script><![CDATA[var FutureCoursesFilter = Class.create();
-FutureCoursesFilter.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+FutureCoursesFilter.prototype = {
 
     initialize: function() {},
 
-    getAvailableDates: function() {
-        var courseId = this.getParameter('sysparm_course'); // ID do curso selecionado
-        // var today = new GlideDate(); // Data de hoje
-
+    getAvailableDates: function(trainingId) {
+        var today = new GlideDate();
         var availableDates = new GlideRecord('x_1593185_traini_0_training_schedule');
-        // availableDates.addQuery('training_name', courseId);
-        // availableDates.addQuery('training_date', '>', today); // Somente datas futuras
-
-        availableDates.addEncodedQuery('training_name=' + courseId + '^training_date>javascript:gs.endOfToday()');
+        availableDates.addEncodedQuery('training_name=' + trainingId + '^training_date>javascript:gs.endOfToday()');
+		
         availableDates.query();
 
         var allowedDates = [];
@@ -34,19 +30,19 @@ FutureCoursesFilter.prototype = Object.extendsObject(AbstractAjaxProcessor, {
     },
 
     type: 'FutureCoursesFilter'
-});]]></script>
+};]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-29 15:03:42</sys_created_on>
         <sys_id>254d630f8317d210440fb2dfeeaad3f8</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name>FutureCoursesFilter </sys_name>
         <sys_package display_value="Training Control" source="x_1593185_traini_0">7fef0aa283d71210440fb2dfeeaad35c</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Training Control">7fef0aa283d71210440fb2dfeeaad35c</sys_scope>
         <sys_update_name>sys_script_include_254d630f8317d210440fb2dfeeaad3f8</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-29 19:20:03</sys_updated_on>
+        <sys_updated_on>2025-01-31 13:56:53</sys_updated_on>
     </sys_script_include>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
         <id>254d630f8317d210440fb2dfeeaad3f8</id>
